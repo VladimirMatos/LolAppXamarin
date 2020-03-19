@@ -11,3 +11,5 @@ C:\Users\vladi\source\repos\PrimLolApp\PrimLolApp\PrimLolApp\obj\Debug\netstanda
 C:\Users\vladi\source\repos\PrimLolApp\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\PrimLolApp.dll
 C:\Users\vladi\source\repos\PrimLolApp\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\ref\PrimLolApp.dll
 C:\Users\vladi\source\repos\PrimLolApp\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\PrimLolApp.pdb
+C:\Users\vladi\source\repos\PrimLolApp\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\PrimLolApp.csproj.Fody.CopyLocal.cache
+C:\Users\vladi\source\repos\PrimLolApp\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\XamlC.stamp

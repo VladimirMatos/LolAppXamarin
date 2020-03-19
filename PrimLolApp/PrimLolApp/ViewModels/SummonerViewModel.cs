@@ -11,28 +11,34 @@ using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Prism.Services;
+using Prism.Commands;
+using Prism.Navigation;
 
 namespace PrismLolApp.ViewModels
 {
     public class SummonerViewModel : INotifyPropertyChanged
     {
         IPageDialogService dialogService;
-        SummonersInf Summoners { get; set; }
+        INavigationService navigationService;
 
-        public SummonersInf summonersInf { get; set; }
+
+        public SummonersInf SummonersInf { get; set; } = new SummonersInf();
         IApiService apiServices = new ApiService();
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public ICommand SummonerInfo { get; set; }
+        public DelegateCommand SummonerInfoCommand { get; set; }
 
-        public SummonerViewModel()
+        public SummonerViewModel(INavigationService inavigationservice, IPageDialogService pageDialogService)
         {
+            navigationService = inavigationservice;
+            dialogService = pageDialogService;
+            SummonerInfoCommand = new DelegateCommand(async()=>{
             if (Connectivity.NetworkAccess == NetworkAccess.Internet)
             {
                 try
                 {
-                    GetSummoners();
+                    await GetSummoners();
                 }
                 catch (Exception ex)
                 {
@@ -44,12 +50,14 @@ namespace PrismLolApp.ViewModels
             {
                 Messages();
             }
+        });
+            
         }
       
         async Task GetSummoners()
         {
-            var response = await apiServices.GetSummonersInfo(Summoners.Name);
-            summonersInf = response;
+            var response = await apiServices.GetSummonersInfo(SummonersInf.Name);
+            SummonersInf = response;
         }
         void Messages()
         {

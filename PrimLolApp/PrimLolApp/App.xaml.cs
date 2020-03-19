@@ -17,6 +17,7 @@ namespace PrimLolApp
         protected override void OnInitialized()
         {
             InitializeComponent();
+            NavigationService.NavigateAsync(new Uri($"/SummonerView"));
         }
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
