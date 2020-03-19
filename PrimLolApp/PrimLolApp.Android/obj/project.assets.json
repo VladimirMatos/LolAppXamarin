@@ -5497,11 +5497,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vladi\\source\\repos\\PrimLolApp\\PrimLolApp\\PrimLolApp.Android\\PrimLolApp.Android.csproj",
+      "projectUniqueName": "C:\\Users\\vladi\\Documents\\GitHub\\LolAppXamarin\\PrimLolApp\\PrimLolApp.Android\\PrimLolApp.Android.csproj",
       "projectName": "PrimLolApp.Android",
-      "projectPath": "C:\\Users\\vladi\\source\\repos\\PrimLolApp\\PrimLolApp\\PrimLolApp.Android\\PrimLolApp.Android.csproj",
+      "projectPath": "C:\\Users\\vladi\\Documents\\GitHub\\LolAppXamarin\\PrimLolApp\\PrimLolApp.Android\\PrimLolApp.Android.csproj",
       "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vladi\\source\\repos\\PrimLolApp\\PrimLolApp\\PrimLolApp.Android\\obj\\",
+      "outputPath": "C:\\Users\\vladi\\Documents\\GitHub\\LolAppXamarin\\PrimLolApp\\PrimLolApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -5522,8 +5522,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\vladi\\source\\repos\\PrimLolApp\\PrimLolApp\\PrimLolApp\\PrimLolApp.csproj": {
-              "projectPath": "C:\\Users\\vladi\\source\\repos\\PrimLolApp\\PrimLolApp\\PrimLolApp\\PrimLolApp.csproj"
+            "C:\\Users\\vladi\\Documents\\GitHub\\LolAppXamarin\\PrimLolApp\\PrimLolApp\\PrimLolApp.csproj": {
+              "projectPath": "C:\\Users\\vladi\\Documents\\GitHub\\LolAppXamarin\\PrimLolApp\\PrimLolApp\\PrimLolApp.csproj"
             }
           }
         }

@@ -936,11 +936,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vladi\\source\\repos\\PrimLolApp\\PrimLolApp\\PrimLolApp\\PrimLolApp.csproj",
+      "projectUniqueName": "C:\\Users\\vladi\\Documents\\GitHub\\LolAppXamarin\\PrimLolApp\\PrimLolApp\\PrimLolApp.csproj",
       "projectName": "PrimLolApp",
-      "projectPath": "C:\\Users\\vladi\\source\\repos\\PrimLolApp\\PrimLolApp\\PrimLolApp\\PrimLolApp.csproj",
+      "projectPath": "C:\\Users\\vladi\\Documents\\GitHub\\LolAppXamarin\\PrimLolApp\\PrimLolApp\\PrimLolApp.csproj",
       "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vladi\\source\\repos\\PrimLolApp\\PrimLolApp\\PrimLolApp\\obj\\",
+      "outputPath": "C:\\Users\\vladi\\Documents\\GitHub\\LolAppXamarin\\PrimLolApp\\PrimLolApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

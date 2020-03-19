@@ -6267,11 +6267,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vladi\\source\\repos\\PrimLolApp\\PrimLolApp\\PrimLolApp.iOS\\PrimLolApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\vladi\\Documents\\GitHub\\LolAppXamarin\\PrimLolApp\\PrimLolApp.iOS\\PrimLolApp.iOS.csproj",
       "projectName": "PrimLolApp.iOS",
-      "projectPath": "C:\\Users\\vladi\\source\\repos\\PrimLolApp\\PrimLolApp\\PrimLolApp.iOS\\PrimLolApp.iOS.csproj",
+      "projectPath": "C:\\Users\\vladi\\Documents\\GitHub\\LolAppXamarin\\PrimLolApp\\PrimLolApp.iOS\\PrimLolApp.iOS.csproj",
       "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vladi\\source\\repos\\PrimLolApp\\PrimLolApp\\PrimLolApp.iOS\\obj\\",
+      "outputPath": "C:\\Users\\vladi\\Documents\\GitHub\\LolAppXamarin\\PrimLolApp\\PrimLolApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -6292,8 +6292,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\vladi\\source\\repos\\PrimLolApp\\PrimLolApp\\PrimLolApp\\PrimLolApp.csproj": {
-              "projectPath": "C:\\Users\\vladi\\source\\repos\\PrimLolApp\\PrimLolApp\\PrimLolApp\\PrimLolApp.csproj"
+            "C:\\Users\\vladi\\Documents\\GitHub\\LolAppXamarin\\PrimLolApp\\PrimLolApp\\PrimLolApp.csproj": {
+              "projectPath": "C:\\Users\\vladi\\Documents\\GitHub\\LolAppXamarin\\PrimLolApp\\PrimLolApp\\PrimLolApp.csproj"
             }
           }
         }

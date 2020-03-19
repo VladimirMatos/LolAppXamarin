@@ -20,7 +20,7 @@ namespace PrismLolApp.ViewModels
     {
         IPageDialogService dialogService;
         INavigationService navigationService;
-
+        
 
         public SummonersInf SummonersInf { get; set; } = new SummonersInf();
         IApiService apiServices = new ApiService();
