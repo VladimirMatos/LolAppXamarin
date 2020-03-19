@@ -13,10 +13,11 @@ using Xamarin.Forms;
 using Prism.Services;
 using Prism.Commands;
 using Prism.Navigation;
+using PrimLolApp.ViewModels;
 
 namespace PrismLolApp.ViewModels
 {
-    public class SummonerViewModel : INotifyPropertyChanged
+    public class SummonerViewModel : BaseViewModel, INotifyPropertyChanged
     {
         IPageDialogService dialogService;
         INavigationService navigationService;
