@@ -25,13 +25,13 @@ namespace PrimLolApp.Services
             var TierList = await httpClient.GetStringAsync($"{IniUrl}{RegionTL}{Config.UrlTierList}?api_key={Config.ApiKey}");
             return JsonConvert.DeserializeObject<TierList>(TierList);
         }
-        public async Task<Servers> GetServerStatus(string RegionSS)
+        public async Task<Status> GetServerStatus(string RegionSS)
         {
             HttpClient httpClient = new HttpClient();
             Uri uri= new Uri($"{IniUrl}{RegionSS}{Config.UrlServerStatus}?api_key={Config.ApiKey}");
             HttpResponseMessage response = await httpClient.GetAsync(uri);
             var jsonString = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<Servers>(jsonString);
+            return JsonConvert.DeserializeObject<Status>(jsonString);
         }
         public async Task<List<LeaguePointsQueue>> GetMatchRank(string RegionMR)
         {

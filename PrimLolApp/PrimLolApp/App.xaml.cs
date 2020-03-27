@@ -17,7 +17,7 @@ namespace PrimLolApp
         protected override void OnInitialized()
         {
             InitializeComponent();
-            NavigationService.NavigateAsync(new Uri($"/LeagueView"));
+            NavigationService.NavigateAsync(new Uri($"/ServerStatusView"));
         }
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {

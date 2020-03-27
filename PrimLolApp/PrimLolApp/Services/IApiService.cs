@@ -9,7 +9,7 @@ namespace PrimLolApp.Services
     {
         Task<SummonersInf> GetSummonersInfo(string summonerName);
         Task<TierList> GetTierList(string Region);
-        Task<Servers> GetServerStatus(string Region);
+        Task<Status> GetServerStatus(string Region);
         Task<List<LeaguePointsQueue>> GetMatchRank(string Region);
     }
 }

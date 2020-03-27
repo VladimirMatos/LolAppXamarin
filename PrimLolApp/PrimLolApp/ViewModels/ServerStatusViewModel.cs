@@ -52,7 +52,7 @@ namespace PrimLolApp.ViewModels
         async Task LoadServerStatus()
         {
             var list = await apiService.GetServerStatus(ClientStatus.Region);
-            ServerStatuses = new ObservableCollection<Servers>(list.Serversinfo);
+            ServerStatuses = new ObservableCollection<Servers>(list.Servers);
         }
         void Messages()
         {

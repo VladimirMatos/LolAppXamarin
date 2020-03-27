@@ -26,7 +26,7 @@ namespace PrimLolApp.Models
         [JsonProperty("services")]
         public IList<Service> Services { get; set; }
         public string Region { get; set; }
-        public IEnumerable<Servers> Serversinfo { get; internal set; }
+        
     }
     public class Update
     {
@@ -86,5 +86,10 @@ namespace PrimLolApp.Models
 
         [JsonProperty("incidents")]
         public IList<Incident> Incidents { get; set; }
+    }
+
+    public class Status
+    {
+        public IList<Servers> Servers { get; set; }
     }
 }
