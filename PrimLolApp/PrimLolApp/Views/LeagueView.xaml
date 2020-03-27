@@ -8,41 +8,52 @@
     <ContentPage.Content>
        
             <StackLayout>
-                <Entry Text="{Binding RankINFO.Region}" Keyboard="Email" Placeholder="ID"
+            <Entry Text="{Binding LeaguePointsQueue.Region}" Keyboard="Email" Placeholder="ID"
    
                        />
             
                 <Button Text="Buscar" Command="{Binding MatchInfCommand}"
                          TextColor="Black"
                        />
-                <Label Text="{Binding RankINFO.LeagueId}"
-                   TextColor="Black"
+            <ListView ItemsSource="{Binding LeaguePoints}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+
+                                <Label Text="{Binding LeagueId}"
+                                TextColor="Black"
                       />
-                <Label Text="{Binding RankINFO.QueueType}"
+                                <Label Text="{Binding QueueType}"
                         TextColor="Black"
                        />
-                <Label Text="{Binding RankINFO.Tier}"
+                                <Label Text="{Binding Tier}"
                         TextColor="Black"
                        />
-                <Label Text="{Binding RankINFO.Rank}"
+                                <Label Text="{Binding Rank}"
                         TextColor="Black"
                        />
-                <Label Text="{Binding RankINFO.SummonerId}"
-                        TextColor="Black"
-                      />
-                <Label Text="{Binding RankINFO.SummonerName}"
-                        TextColor="Black"
-                       />
-                <Label Text="{Binding RankINFO.LeaguePoints}"
-                        TextColor="Black"
-                       />
-                <Label Text="{Binding RankINFO.Wins}"
+                                <Label Text="{Binding SummonerId}"
                         TextColor="Black"
                       />
-                <Label Text="{Binding RankINFO.Losses}"
+                                <Label Text="{Binding SummonerName}"
                         TextColor="Black"
                        />
-               
+                                <Label Text="{Binding LeaguePoints}"
+                        TextColor="Black"
+                       />
+                                <Label Text="{Binding Wins}"
+                        TextColor="Black"
+                      />
+                                <Label Text="{Binding Losses}"
+                        TextColor="Black"
+                       />
+                            </StackLayout>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
             </StackLayout>
         

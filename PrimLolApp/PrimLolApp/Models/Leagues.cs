@@ -35,10 +35,27 @@ namespace PrimLolApp.Models
         [JsonProperty("losses")]
         public int Losses { get; set; }
 
+        [JsonProperty("veteran")]
+        public bool Veteran { get; set; }
+
+        [JsonProperty("inactive")]
+        public bool Inactive { get; set; }
+
+        [JsonProperty("freshBlood")]
+        public bool FreshBlood { get; set; }
+
+        [JsonProperty("hotStreak")]
+        public bool HotStreak { get; set; }
+
 
         public string Region { get; set; }
         public string Match { get; set; }
         public string elo { get; set; }
         public string page { get; set; }
+    }
+
+    public class RankedIngo
+    {
+        public IList<LeaguePointsQueue> LeaguePoints { get; set; }
     }
 }

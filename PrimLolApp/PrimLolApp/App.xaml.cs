@@ -24,7 +24,7 @@ namespace PrimLolApp
             containerRegistry.RegisterForNavigation<SummonerView, SummonerViewModel>();
             containerRegistry.RegisterForNavigation<TierListPlayersView, TierListViewModel>();
             containerRegistry.RegisterForNavigation<ServerStatusView, ServerStatusViewModel>();
-            containerRegistry.RegisterForNavigation<LeagueView, LeagueViewModel>();
+            containerRegistry.RegisterForNavigation<LeagueView, RankedEloViewModel>();
         } 
  
     }

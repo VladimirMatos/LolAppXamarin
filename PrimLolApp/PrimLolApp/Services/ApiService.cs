@@ -28,14 +28,19 @@ namespace PrimLolApp.Services
         public async Task<Servers> GetServerStatus(string RegionSS)
         {
             HttpClient httpClient = new HttpClient();
-            var ServerStatus = await httpClient.GetStringAsync($"{IniUrl}{RegionSS}{Config.UrlServerStatus}?api_key={Config.ApiKey}");
-            return JsonConvert.DeserializeObject<Servers>(ServerStatus);
+            Uri uri= new Uri($"{IniUrl}{RegionSS}{Config.UrlServerStatus}?api_key={Config.ApiKey}");
+            HttpResponseMessage response = await httpClient.GetAsync(uri);
+            var jsonString = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<Servers>(jsonString);
         }
-        public async Task<LeaguePointsQueue> GetMatchRank(string RegionMR)
+        public async Task<List<LeaguePointsQueue>> GetMatchRank(string RegionMR)
         {
-            HttpClient httpClient = new HttpClient();
-            var RankMatch = await httpClient.GetStringAsync($"{IniUrl}{RegionMR}.api.riotgames.com/lol/league-exp/v4/entries/RANKED_SOLO_5x5/CHALLENGER/I?page=1&api_key=RGAPI-e6ab4136-c44d-4543-95b6-3e51b19017a5");
-            return JsonConvert.DeserializeObject<LeaguePointsQueue>(RankMatch);
+            HttpClient webClient = new HttpClient();
+            Uri uri = new Uri($"{IniUrl}{RegionMR}.api.riotgames.com/lol/league-exp/v4/entries/RANKED_SOLO_5x5/CHALLENGER/I?page=1&api_key=RGAPI-e6ab4136-c44d-4543-95b6-3e51b19017a5");
+            HttpResponseMessage response = await webClient.GetAsync(uri);
+            var jsonString = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<List<LeaguePointsQueue>>(jsonString);
+
         }
 
 
