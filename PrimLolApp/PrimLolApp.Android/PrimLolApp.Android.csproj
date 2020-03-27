@@ -87,7 +87,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\lol-new-logo.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PrimLolApp\PrimLolApp.csproj">
       <Project>{DAA77988-47E5-4A17-8F8F-566A55525611}</Project>
