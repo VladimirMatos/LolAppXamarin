@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace PrimLolApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TabbedPage : TabbedPage
+    public partial class TabbedPageView : TabbedPage
     {
-        public TabbedPage()
+        public TabbedPageView()
         {
             InitializeComponent();
         }

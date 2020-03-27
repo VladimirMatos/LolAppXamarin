@@ -1,5 +1,4 @@
-﻿using PrismLolApp.Services;
-using PrismLolApp.Models;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -14,8 +13,10 @@ using Prism.Services;
 using Prism.Commands;
 using Prism.Navigation;
 using PrimLolApp.ViewModels;
+using PrimLolApp.Models;
+using PrimLolApp.Services;
 
-namespace PrismLolApp.ViewModels
+namespace PrimLolApp.ViewModels
 {
     public class SummonerViewModel : BaseViewModel, INotifyPropertyChanged
     {
@@ -64,5 +65,6 @@ namespace PrismLolApp.ViewModels
         {
             dialogService.DisplayAlertAsync("Error", "Check your connection to internet", "ok");
         }
+       
     }
 }

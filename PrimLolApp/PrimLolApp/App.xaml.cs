@@ -6,7 +6,7 @@ using Prism.Modularity;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using PrismLolApp.ViewModels;
+using PrimLolApp.ViewModels;
 
 namespace PrimLolApp
 {
@@ -17,13 +17,15 @@ namespace PrimLolApp
         protected override void OnInitialized()
         {
             InitializeComponent();
-            NavigationService.NavigateAsync(new Uri($"/SummonerView"));
+            NavigationService.NavigateAsync(new Uri($"/LeagueView"));
         }
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<SummonerView, SummonerViewModel>();
+            containerRegistry.RegisterForNavigation<TierListPlayersView, TierListViewModel>();
+            containerRegistry.RegisterForNavigation<ServerStatusView, ServerStatusViewModel>();
+            containerRegistry.RegisterForNavigation<LeagueView, LeagueViewModel>();
         } 
-
-       
+ 
     }
 }

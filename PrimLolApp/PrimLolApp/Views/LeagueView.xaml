@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PrimLolApp.Views.LeagueView">
+    <ContentPage.Content>
+       
+            <StackLayout>
+                <Entry Text="{Binding RankINFO.Region}" Keyboard="Email" Placeholder="ID"
+   
+                       />
+            
+                <Button Text="Buscar" Command="{Binding MatchInfCommand}"
+                         TextColor="Black"
+                       />
+                <Label Text="{Binding RankINFO.LeagueId}"
+                   TextColor="Black"
+                      />
+                <Label Text="{Binding RankINFO.QueueType}"
+                        TextColor="Black"
+                       />
+                <Label Text="{Binding RankINFO.Tier}"
+                        TextColor="Black"
+                       />
+                <Label Text="{Binding RankINFO.Rank}"
+                        TextColor="Black"
+                       />
+                <Label Text="{Binding RankINFO.SummonerId}"
+                        TextColor="Black"
+                      />
+                <Label Text="{Binding RankINFO.SummonerName}"
+                        TextColor="Black"
+                       />
+                <Label Text="{Binding RankINFO.LeaguePoints}"
+                        TextColor="Black"
+                       />
+                <Label Text="{Binding RankINFO.Wins}"
+                        TextColor="Black"
+                      />
+                <Label Text="{Binding RankINFO.Losses}"
+                        TextColor="Black"
+                       />
+               
+
+            </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

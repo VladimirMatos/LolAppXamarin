@@ -1,12 +1,15 @@
-﻿using PrismLolApp.Models;
+﻿using PrimLolApp.Models;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace PrismLolApp.Services
+namespace PrimLolApp.Services
 {
     public interface IApiService
     {
-        Task<SummonersInf> GetSummonersInfo(string summonerName); 
-        
+        Task<SummonersInf> GetSummonersInfo(string summonerName);
+        Task<TierList> GetTierList(string Region);
+        Task<Servers> GetServerStatus(string Region);
+        Task<LeaguePointsQueue> GetMatchRank(string Region);
     }
 }
