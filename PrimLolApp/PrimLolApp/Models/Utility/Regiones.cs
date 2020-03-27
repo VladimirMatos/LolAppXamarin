@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PrimLolApp.Models.Utilitys
+namespace PrimLolApp.Models.Utility
 {
     public class Regiones
     {

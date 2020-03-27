@@ -4,63 +4,32 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+              
              x:Class="PrimLolApp.Views.SummonerView">
     <ContentPage.Content>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <StackLayout>
-                <Picker Title="Select a Region" 
+        <StackLayout>
+             <Picker Title="Select a Region" 
                         ItemsSource="{Binding ListRegion}"
                         ItemDisplayBinding="{Binding LolRegiones}"
                         SelectedItem="{Binding SelectedRegiones}"
-                        Grid.Row="0"
-                        Grid.Column="0"
-                      />
-                <Entry Text="{Binding SummonersInf.Name}" Keyboard="Email" Placeholder="Summoner Name" 
-                       Grid.Row="1"
-                        Grid.Column="0"
+               />
+                    <Entry Text="{Binding SummonersInf.Name}" Keyboard="Email" Placeholder="Summoner Name" 
                        />
-                <Button Text="Buscar" Command="{Binding SummonerInfoCommand}"
-                         TextColor="Black"
-                        Grid.Row="2"
-                        Grid.Column="0"
-                        />
-                <Label Text="{Binding SummonersInf.Name}"
-                   TextColor="Black"
-                       Grid.Row="3"
-                        Grid.Column="0"
-                       />
-                <Label Text="{Binding SummonersInf.SummonerLevel}"
-                        TextColor="Black"
-                       Grid.Row="4"
-                        Grid.Column="0"
-                       />
-                <Label Text="{Binding SummonersInf.ProfileIconId}"
-                        TextColor="Black"
-                       Grid.Row="5"
-                        Grid.Column="0"
-                       />
-                <Label Text="{Binding SummonersInf.RevisionDate}"
-                        TextColor="Black"
-                       Grid.Row="6"
-                        Grid.Column="0"
-                       />
-                
 
-            </StackLayout>
-        </Grid>
-           
-        
+                    <Label Text="{Binding SummonersInf.Name}"
+                       />
+                    <Label Text="{Binding SummonersInf.Name}"
+                       />
+                    <Label Text="{Binding SummonersInf.SummonerLevel}"
+                       />
+                    <Label Text="{Binding SummonersInf.ProfileIconId}"
+                       />
+                    <Label Text="{Binding SummonersInf.RevisionDate}"
+                        TextColor="Black"
+                       
+                       />
+                    <Button Text="Buscar" Command="{Binding SummonerInfoCommand}"  />
+
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

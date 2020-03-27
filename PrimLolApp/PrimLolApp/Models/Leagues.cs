@@ -54,5 +54,8 @@ namespace PrimLolApp.Models
         public string page { get; set; }
     }
 
-  
+    public class RankedIngo
+    {
+        public IList<LeaguePointsQueue> LeaguePoints { get; set; }
+    }
 }

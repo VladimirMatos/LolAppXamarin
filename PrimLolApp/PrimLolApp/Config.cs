@@ -14,6 +14,5 @@ namespace PrimLolApp
         public static string UrlTierList = ".api.riotgames.com/lor/ranked/v1/leaderboards";
         public static string UrlServerStatus = ".api.riotgames.com/lol/status/v3/shard-data";
         public static string UrlMatchElo = ".api.riotgames.com/lol/league-exp/v4/entries/";
-
     }
 }

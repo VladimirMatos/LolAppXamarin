@@ -1,4 +1,4 @@
-﻿using PrimLolApp.Models.Utilitys;
+﻿using PrimLolApp.Models.Utility;
 using System;
 using System.Collections.Generic;
 using System.Text;

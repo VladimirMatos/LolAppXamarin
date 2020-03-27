@@ -1,6 +1,5 @@
 ﻿using PrimLolApp.Models;
 using PrimLolApp.Models.Utility;
-using PrimLolApp.Models.Utilitys;
 using PrimLolApp.Services;
 using Prism.Commands;
 using Prism.Navigation;
@@ -110,7 +109,7 @@ namespace PrimLolApp.ViewModels
             {
                 try
                 {
-                    var RankedInfo = await apiService.GetMatchRank(Regions, Matchs,Tiers,Divisions);
+                    var RankedInfo = await apiService.GetMatchRank(Regions, Matchs, Tiers, Divisions);
                     LeaguePoints = new ObservableCollection<LeaguePointsQueue>(RankedInfo);
                 }
                 catch (Exception ex)
@@ -123,7 +122,7 @@ namespace PrimLolApp.ViewModels
             {
                 Messages();
             }
-            
+
         }
         void Messages()
         {

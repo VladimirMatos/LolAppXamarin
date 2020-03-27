@@ -27,15 +27,75 @@
                                     Text="{Binding Hostname}"/>
                                 <Label 
                                     Text="{Binding RegionTag}"/>
-                                <Label 
-                                    Text="{Binding Services}"/>
+                              
 
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-        </StackLayout>
+            <ListView ItemsSource="{Binding  ServiceStatuses}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label  
+                                        Text="{Binding Name}" />
+                                <Label 
+                                    Text="{Binding Slug}"/>
+                                <Label 
+                                    Text="{Binding Status}"/>
 
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding  IncidentsStatuses}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label  
+                                        Text="{Binding Id}" />
+                                <Label 
+                                    Text="{Binding Active}"/>
+                                <Label 
+                                    Text="{Binding CreatedAt}"/>
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView ItemsSource="{Binding  UpdatesStatus}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label  
+                                        Text="{Binding Id}" />
+                                <Label 
+                                    Text="{Binding Author}"/>
+                                <Label 
+                                    Text="{Binding Heading}"/>
+                                <Label 
+                                    Text="{Binding Content}"/>
+                                <Label 
+                                    Text="{Binding Severity}"/>
+                                <Label 
+                                    Text="{Binding CreatedAt}"/>
+                                <Label 
+                                    Text="{Binding UpdatedAt}"/>
+                                <Label 
+                                    Text="{Binding Translations}"/>
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

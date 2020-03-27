@@ -5,8 +5,11 @@ using System.Text;
 
 namespace PrimLolApp.Models
 {
-    
-   public class Servers
+    public class ServerStatus
+    {
+        public IList<Servers> Servers { get; set; }
+    }
+   public class Servers 
     {
         [JsonProperty("name")]
         public string Name { get; set; }
@@ -26,7 +29,7 @@ namespace PrimLolApp.Models
         [JsonProperty("services")]
         public IList<Service> Services { get; set; }
         public string Region { get; set; }
-        
+
     }
     public class Update
     {
@@ -87,9 +90,5 @@ namespace PrimLolApp.Models
         [JsonProperty("incidents")]
         public IList<Incident> Incidents { get; set; }
     }
-
-    public class Status
-    {
-        public IList<Servers> Servers { get; set; }
-    }
 }
+    

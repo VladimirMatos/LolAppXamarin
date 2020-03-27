@@ -5,11 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="PrimLolApp.Views.TierListPlayersView">
-    
-
     <ContentPage.Content>
-
-        <StackLayout>
+        <StackLayout HeightRequest="1000">
             <Picker Title="Select a Region" 
                         ItemsSource="{Binding ListContinent}"
                         ItemDisplayBinding="{Binding LolCont}"
@@ -17,14 +14,14 @@
                         Grid.Row="0"
                         Grid.Column="0"
                       />
-                
+
             <Button Text="Buscar" Command="{Binding TierListInf}"
                          TextColor="Black"
                        />
             <ListView ItemsSource="{Binding  TierList}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell>
+                      
                             <StackLayout>
                                 <Label  
                                         Text="{Binding Name}" />
@@ -32,7 +29,7 @@
                                     Text="{Binding Rank}"/>
 
                             </StackLayout>
-                        </ViewCell>
+                        
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

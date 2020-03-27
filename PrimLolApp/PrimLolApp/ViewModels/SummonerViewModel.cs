@@ -15,7 +15,7 @@ using Prism.Navigation;
 using PrimLolApp.ViewModels;
 using PrimLolApp.Models;
 using PrimLolApp.Services;
-using PrimLolApp.Models.Utilitys;
+using PrimLolApp.Models.Utility;
 using System.Linq;
 
 namespace PrimLolApp.ViewModels
@@ -32,7 +32,7 @@ namespace PrimLolApp.ViewModels
         IApiService apiServices = new ApiService();
         public DelegateCommand SummonerInfoCommand { get; set; }
 
-       
+
 
         public SummonerViewModel(INavigationService inavigationservice, IPageDialogService pageDialogService)
         {
@@ -45,7 +45,7 @@ namespace PrimLolApp.ViewModels
             });
         }
 
-       public Regiones SelectedRegiones
+        public Regiones SelectedRegiones
         {
             get
             {
@@ -57,35 +57,33 @@ namespace PrimLolApp.ViewModels
                 Regiones = _selectedRegion.LolRegiones;
             }
         }
-    
 
-         async Task GetSummoners()
-         {
-             if (Connectivity.NetworkAccess == NetworkAccess.Internet)
-             {
+
+        async Task GetSummoners()
+        {
+            if (Connectivity.NetworkAccess == NetworkAccess.Internet)
+            {
                 try
-                { 
-                    var response = await apiServices.GetSummonersInfo(Regiones,SummonersInf.Name);
-                    SummonersInf = response;
-                 }
-                catch (Exception ex)
-                 {
-                Debug.WriteLine($"API EXCEPTION {ex}");
-                  }
-
-             }
-                else
                 {
-            Messages();
+                    var response = await apiServices.GetSummonersInfo(Regiones, SummonersInf.Name);
+                    SummonersInf = response;
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine($"API EXCEPTION {ex}");
                 }
 
-          }
-             void Messages()
-             {
-                 dialogService.DisplayAlertAsync("Error", "Check your connection to internet", "ok");
-             }
-        
+            }
+            else
+            {
+                Messages();
+            }
 
-       
+        }
+        void Messages()
+        {
+            dialogService.DisplayAlertAsync("Error", "Check your connection to internet", "ok");
+        }
+
     }
 }

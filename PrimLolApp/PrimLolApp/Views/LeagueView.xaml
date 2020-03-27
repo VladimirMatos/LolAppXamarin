@@ -4,15 +4,15 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+            BackgroundImageSource="Best"
              x:Class="PrimLolApp.Views.LeagueView">
     <ContentPage.Content>
-       
-            <StackLayout>
+
+        <StackLayout HeightRequest="150">
             <Picker Title="Select a Region" 
                         ItemsSource="{Binding ListRegions}"
                         ItemDisplayBinding="{Binding LolRegiones}"
-                        SelectedItem="{Binding SelectedRegion}"
-                       
+                        SelectedItem="{Binding SelectedRegion}"    
                       />
             <Picker Title="Select a Region" 
                         ItemsSource="{Binding ListMatchs}"
@@ -39,7 +39,7 @@
             <ListView ItemsSource="{Binding LeaguePoints}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell>
+                        
                             <StackLayout>
 
                                 <Label Text="{Binding LeagueId}"
@@ -70,13 +70,12 @@
                         TextColor="Black"
                        />
                             </StackLayout>
-
-                        </ViewCell>
-                    </DataTemplate>
+                        
+              </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
 
-            </StackLayout>
-        
+        </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>

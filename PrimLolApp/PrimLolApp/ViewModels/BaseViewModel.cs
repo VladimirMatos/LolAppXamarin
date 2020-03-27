@@ -6,14 +6,14 @@ using System.Text;
 
 namespace PrimLolApp.ViewModels
 {
-    public abstract class BaseViewModel : INotifyPropertyChanged
+    public abstract class BaseViewModel
     {
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-        protected bool SetProperty<T>(ref T backfield,T value,
+        protected bool SetProperty<T>(ref T backfield, T value,
             [CallerMemberName]string propertyName = null)
         {
             if (EqualityComparer<T>.Default.Equals(backfield, value))
@@ -24,6 +24,5 @@ namespace PrimLolApp.ViewModels
             OnPropertyChanged(propertyName);
             return true;
         }
-       
     }
 }

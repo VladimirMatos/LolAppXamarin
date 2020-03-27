@@ -17,15 +17,15 @@ namespace PrimLolApp
         protected override void OnInitialized()
         {
             InitializeComponent();
-            NavigationService.NavigateAsync("NavigationPage/SummonerView");
+            NavigationService.NavigateAsync(new Uri("/TabbedPageView"));
         }
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<SummonerView, SummonerViewModel>();
             containerRegistry.RegisterForNavigation<TierListPlayersView, TierListViewModel>();
-            containerRegistry.RegisterForNavigation<ServerStatusView, ServerStatusViewModel>();
             containerRegistry.RegisterForNavigation<LeagueView, RankedEloViewModel>();
-            containerRegistry.RegisterForNavigation<HomeMasterDetailPage,HomeMAsterDetailPageViewModel>();
+            containerRegistry.RegisterForNavigation<TabbedPageView, TabbedPageViewModel>();
+            containerRegistry.RegisterForNavigation<ServerStatusView, ServerStatusViewModel>();
         } 
  
     }

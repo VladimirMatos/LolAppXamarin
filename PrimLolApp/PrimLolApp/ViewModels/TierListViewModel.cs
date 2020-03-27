@@ -1,6 +1,5 @@
 ﻿using PrimLolApp.Models;
 using PrimLolApp.Models.Utility;
-using PrimLolApp.Models.Utilitys;
 using PrimLolApp.Services;
 using Prism.Commands;
 using Prism.Navigation;
@@ -71,7 +70,7 @@ namespace PrimLolApp.ViewModels
             {
                 Messages();
             }
-            
+
         }
         void Messages()
         {
