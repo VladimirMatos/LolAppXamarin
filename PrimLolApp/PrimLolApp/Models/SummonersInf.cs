@@ -27,5 +27,8 @@ namespace PrimLolApp.Models
 
         [JsonProperty("revisionDate")]
         public long RevisionDate { get; set; }
+      
+
+       
     }
 }

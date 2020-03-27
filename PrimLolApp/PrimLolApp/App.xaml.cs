@@ -17,7 +17,7 @@ namespace PrimLolApp
         protected override void OnInitialized()
         {
             InitializeComponent();
-            NavigationService.NavigateAsync(new Uri($"/ServerStatusView"));
+            NavigationService.NavigateAsync("NavigationPage/SummonerView");
         }
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
@@ -25,6 +25,7 @@ namespace PrimLolApp
             containerRegistry.RegisterForNavigation<TierListPlayersView, TierListViewModel>();
             containerRegistry.RegisterForNavigation<ServerStatusView, ServerStatusViewModel>();
             containerRegistry.RegisterForNavigation<LeagueView, RankedEloViewModel>();
+            containerRegistry.RegisterForNavigation<HomeMasterDetailPage,HomeMAsterDetailPageViewModel>();
         } 
  
     }

@@ -12,10 +12,10 @@ namespace PrimLolApp.Services
     {
         const string FindUsers = "v4/summoners/by-name/";
         const string IniUrl = " https://";
-        public async Task<SummonersInf> GetSummonersInfo(string summonerName)
+        public async Task<SummonersInf> GetSummonersInfo(string region,string summonerName)
         {
             HttpClient httpClient = new HttpClient();
-            var Summoners = await httpClient.GetStringAsync($"{Config.UrlSummoner}{FindUsers}{summonerName}?api_key={Config.ApiKey}");
+            var Summoners = await httpClient.GetStringAsync($"{IniUrl}{region}{Config.UrlSummoner}{FindUsers}{summonerName}?api_key={Config.ApiKey}");
             return JsonConvert.DeserializeObject<SummonersInf>(Summoners);
         }
 
@@ -33,10 +33,10 @@ namespace PrimLolApp.Services
             var jsonString = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<Status>(jsonString);
         }
-        public async Task<List<LeaguePointsQueue>> GetMatchRank(string RegionMR)
+        public async Task<List<LeaguePointsQueue>> GetMatchRank(string RegionMR,string Match,string league,string division)
         {
             HttpClient webClient = new HttpClient();
-            Uri uri = new Uri($"{IniUrl}{RegionMR}.api.riotgames.com/lol/league-exp/v4/entries/RANKED_SOLO_5x5/CHALLENGER/I?page=1&api_key=RGAPI-e6ab4136-c44d-4543-95b6-3e51b19017a5");
+            Uri uri = new Uri($"{IniUrl}{RegionMR}{Config.UrlMatchElo}{Match}/{league}/{division}?page=1&api_key={Config.ApiKey}");
             HttpResponseMessage response = await webClient.GetAsync(uri);
             var jsonString = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<List<LeaguePointsQueue>>(jsonString);

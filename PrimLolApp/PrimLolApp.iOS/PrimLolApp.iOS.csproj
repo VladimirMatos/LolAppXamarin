@@ -135,4 +135,10 @@
       <Name>PrimLolApp</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\League.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LOL.png" />
+  </ItemGroup>
 </Project>

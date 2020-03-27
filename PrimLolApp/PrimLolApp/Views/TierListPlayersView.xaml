@@ -10,8 +10,14 @@
     <ContentPage.Content>
 
         <StackLayout>
-            <Entry Text="{Binding playersInf.Region}" Keyboard="Email" Placeholder="ID"                        
-                       />
+            <Picker Title="Select a Region" 
+                        ItemsSource="{Binding ListContinent}"
+                        ItemDisplayBinding="{Binding LolCont}"
+                        SelectedItem="{Binding SelectedContins}"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                      />
+                
             <Button Text="Buscar" Command="{Binding TierListInf}"
                          TextColor="Black"
                        />
@@ -24,7 +30,7 @@
                                         Text="{Binding Name}" />
                                 <Label 
                                     Text="{Binding Rank}"/>
-                                
+
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

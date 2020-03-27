@@ -15,6 +15,8 @@ using Prism.Navigation;
 using PrimLolApp.ViewModels;
 using PrimLolApp.Models;
 using PrimLolApp.Services;
+using PrimLolApp.Models.Utilitys;
+using System.Linq;
 
 namespace PrimLolApp.ViewModels
 {
@@ -22,49 +24,68 @@ namespace PrimLolApp.ViewModels
     {
         IPageDialogService dialogService;
         INavigationService navigationService;
-        
-
+        public string Regiones { get; set; }
+        private Regiones _selectedRegion;
+        public event PropertyChangedEventHandler PropertyChanged;
+        public List<Regiones> ListRegion { get; set; }
         public SummonersInf SummonersInf { get; set; } = new SummonersInf();
         IApiService apiServices = new ApiService();
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
         public DelegateCommand SummonerInfoCommand { get; set; }
+
+       
 
         public SummonerViewModel(INavigationService inavigationservice, IPageDialogService pageDialogService)
         {
+            ListRegion = RegionsPicker.GetRegion().OrderBy(c => c.LolRegiones).ToList();
             navigationService = inavigationservice;
             dialogService = pageDialogService;
-            SummonerInfoCommand = new DelegateCommand(async()=>{
-            if (Connectivity.NetworkAccess == NetworkAccess.Internet)
+            SummonerInfoCommand = new DelegateCommand(async () =>
             {
+                await GetSummoners();
+            });
+        }
+
+       public Regiones SelectedRegiones
+        {
+            get
+            {
+                return _selectedRegion;
+            }
+            set
+            {
+                SetProperty(ref _selectedRegion, value);
+                Regiones = _selectedRegion.LolRegiones;
+            }
+        }
+    
+
+         async Task GetSummoners()
+         {
+             if (Connectivity.NetworkAccess == NetworkAccess.Internet)
+             {
                 try
-                {
-                    await GetSummoners();
-                }
+                { 
+                    var response = await apiServices.GetSummonersInfo(Regiones,SummonersInf.Name);
+                    SummonersInf = response;
+                 }
                 catch (Exception ex)
+                 {
+                Debug.WriteLine($"API EXCEPTION {ex}");
+                  }
+
+             }
+                else
                 {
-                    Debug.WriteLine($"API EXCEPTION {ex}");
+            Messages();
                 }
 
-            }
-            else
-            {
-                Messages();
-            }
-        });
-            
-        }
-      
-        async Task GetSummoners()
-        {
-            var response = await apiServices.GetSummonersInfo(SummonersInf.Name);
-            SummonersInf = response;
-        }
-        void Messages()
-        {
-            dialogService.DisplayAlertAsync("Error", "Check your connection to internet", "ok");
-        }
+          }
+             void Messages()
+             {
+                 dialogService.DisplayAlertAsync("Error", "Check your connection to internet", "ok");
+             }
+        
+
        
     }
 }

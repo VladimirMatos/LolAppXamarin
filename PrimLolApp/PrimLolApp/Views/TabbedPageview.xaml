@@ -3,10 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             x:Class="PrimLolApp.Views.TabbedPageView">
-  <!--Pages can be added as references or inline-->
-  <ContentPage Title="Tab 1" />
-  <ContentPage Title="Tab 2" />
-  <ContentPage Title="Tab 3" />
+            xmlns:views="clr-namespace:PrimLolApp.Views"
+            mc:Ignorable="d"
+             x:Class="PrimLolApp.Views.TabbedPageView"
+            BarBackgroundColor="DarkBlue">
+    <!--Pages can be added as references or inline-->
+
+<NavigationPage Title="LeagueInfo">
+    <x:Arguments>
+            <views:LeagueView Title="League Info"/>
+    </x:Arguments>
+</NavigationPage>
+<NavigationPage Title="Summoner Info">
+    <x:Arguments>
+            <views:SummonerView Title="Summoner Info"/>
+    </x:Arguments>
+</NavigationPage>
+<NavigationPage Title="Tier List Player">
+    <x:Arguments>
+            <views:TierListPlayersView Title="Tier List Player"/>
+    </x:Arguments>
+</NavigationPage>
+<NavigationPage Title="Server Status">
+    <x:Arguments>
+        <views:ServerStatusView Title="Server Status"/>
+    </x:Arguments>
+</NavigationPage>
 </TabbedPage>

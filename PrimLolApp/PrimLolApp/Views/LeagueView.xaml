@@ -8,11 +8,32 @@
     <ContentPage.Content>
        
             <StackLayout>
-            <Entry Text="{Binding LeaguePointsQueue.Region}" Keyboard="Email" Placeholder="ID"
-   
-                       />
-            
-                <Button Text="Buscar" Command="{Binding MatchInfCommand}"
+            <Picker Title="Select a Region" 
+                        ItemsSource="{Binding ListRegions}"
+                        ItemDisplayBinding="{Binding LolRegiones}"
+                        SelectedItem="{Binding SelectedRegion}"
+                       
+                      />
+            <Picker Title="Select a Region" 
+                        ItemsSource="{Binding ListMatchs}"
+                        ItemDisplayBinding="{Binding TypeMatchs}"
+                        SelectedItem="{Binding SelectedMatchs}"
+                        
+                      />
+            <Picker Title="Select a Region" 
+                        ItemsSource="{Binding ListTiers}"
+                        ItemDisplayBinding="{Binding TierElo}"
+                        SelectedItem="{Binding SelectedTiers}"
+                       
+                      />
+            <Picker Title="Select a Region" 
+                        ItemsSource="{Binding ListDivision}"
+                        ItemDisplayBinding="{Binding MyDivision}"
+                        SelectedItem="{Binding SelectedDvision}"
+                        
+                      />
+
+            <Button Text="Buscar" Command="{Binding MatchInfCommand}"
                          TextColor="Black"
                        />
             <ListView ItemsSource="{Binding LeaguePoints}">

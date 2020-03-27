@@ -15,29 +15,52 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                
             </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
             <StackLayout>
-                <Entry Text="{Binding SummonersInf.Name}" Keyboard="Email" Placeholder="ID"
-                        
-                       Grid.Column="0"
-                       Grid.Row="0"/>
+                <Picker Title="Select a Region" 
+                        ItemsSource="{Binding ListRegion}"
+                        ItemDisplayBinding="{Binding LolRegiones}"
+                        SelectedItem="{Binding SelectedRegiones}"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                      />
+                <Entry Text="{Binding SummonersInf.Name}" Keyboard="Email" Placeholder="Summoner Name" 
+                       Grid.Row="1"
+                        Grid.Column="0"
+                       />
                 <Button Text="Buscar" Command="{Binding SummonerInfoCommand}"
                          TextColor="Black"
+                        Grid.Row="2"
                         Grid.Column="0"
-                       Grid.Row="1"/>
+                        />
                 <Label Text="{Binding SummonersInf.Name}"
                    TextColor="Black"
-                       Grid.Column="0"
-                       Grid.Row="2"/>
+                       Grid.Row="3"
+                        Grid.Column="0"
+                       />
                 <Label Text="{Binding SummonersInf.SummonerLevel}"
                         TextColor="Black"
-                       Grid.Column="0"
-                       Grid.Row="3"/>
+                       Grid.Row="4"
+                        Grid.Column="0"
+                       />
+                <Label Text="{Binding SummonersInf.ProfileIconId}"
+                        TextColor="Black"
+                       Grid.Row="5"
+                        Grid.Column="0"
+                       />
+                <Label Text="{Binding SummonersInf.RevisionDate}"
+                        TextColor="Black"
+                       Grid.Row="6"
+                        Grid.Column="0"
+                       />
+                
 
             </StackLayout>
         </Grid>
+           
+        
     </ContentPage.Content>
 </ContentPage>
