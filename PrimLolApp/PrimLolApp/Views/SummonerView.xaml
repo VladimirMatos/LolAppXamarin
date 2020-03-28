@@ -3,9 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:PrimLolApp.Models.Utility"
              mc:Ignorable="d"
               
              x:Class="PrimLolApp.Views.SummonerView">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="LightGreenColor">#2FA999</Color>
+            <Color x:Key="BorderColor">#D8D8D8</Color>
+            <Style x:Key="EntryStyle" TargetType="Entry">
+                <Setter Property="HeightRequest" Value="40"></Setter>
+                <Setter Property="Margin" Value="5,0,0,0"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout>
              <Picker Title="Select a Region" 
@@ -13,10 +25,12 @@
                         ItemDisplayBinding="{Binding LolRegiones}"
                         SelectedItem="{Binding SelectedRegiones}"
                />
-                    <Entry Text="{Binding SummonersInf.Name}" Keyboard="Email" Placeholder="Summoner Name" 
-                       />
-
-                    <Label Text="{Binding SummonersInf.Name}"
+            <Entry Text="{Binding SummonersInf.Name}" Keyboard="Email" Placeholder="Summoner Name" 
+                           Style="{StaticResource EntryStylee}">
+   
+            </Entry> 
+ 
+                     <Label Text="{Binding SummonersInf.Name}"
                        />
                     <Label Text="{Binding SummonersInf.Name}"
                        />
@@ -28,7 +42,8 @@
                         TextColor="Black"
                        
                        />
-                    <Button Text="Buscar" Command="{Binding SummonerInfoCommand}"  />
+                    <Button Text="Buscar" Command="{Binding SummonerInfoCommand}" 
+                            Margin="100,20" BorderRadius="6" WidthRequest="200" x:Name="ShopIDSubmit" TextColor="White" BackgroundColor="{StaticResource LightGreenColor}"/>
 
         </StackLayout>
     </ContentPage.Content>

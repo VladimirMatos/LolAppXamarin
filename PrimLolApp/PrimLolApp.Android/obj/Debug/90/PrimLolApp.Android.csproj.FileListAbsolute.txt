@@ -1460,3 +1460,5 @@ C:\Users\vladi\Desktop\LolAppXamarin-master\PrimLolApp\PrimLolApp.Android\obj\De
 C:\Users\vladi\Desktop\LolAppXamarin-master\PrimLolApp\PrimLolApp.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\vladi\Desktop\LolAppXamarin-master\PrimLolApp\PrimLolApp.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\res\drawable\best.png
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\res\drawable\newlogo.jpg
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc64bb709004d0eb6ff0\CustomEntryRenderer.java

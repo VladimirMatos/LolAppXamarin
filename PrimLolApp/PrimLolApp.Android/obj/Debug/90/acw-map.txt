@@ -1,3 +1,6 @@
+PrimLolApp.Droid.CustomEntryRenderer, PrimLolApp.Android;crc64bb709004d0eb6ff0.CustomEntryRenderer
+PrimLolApp.Droid.CustomEntryRenderer;crc64bb709004d0eb6ff0.CustomEntryRenderer
+primlolapp.droid.CustomEntryRenderer;crc64bb709004d0eb6ff0.CustomEntryRenderer
 PrimLolApp.Droid.MainActivity, PrimLolApp.Android;crc64bb709004d0eb6ff0.MainActivity
 PrimLolApp.Droid.MainActivity;crc64bb709004d0eb6ff0.MainActivity
 primlolapp.droid.MainActivity;crc64bb709004d0eb6ff0.MainActivity

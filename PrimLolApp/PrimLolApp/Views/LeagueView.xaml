@@ -3,30 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:custom ="clr-namespace:PrimLolApp;assembly=PrimLolApp"
              mc:Ignorable="d"
-            BackgroundImageSource="lol-new-logo.jpg"
+            BackgroundColor="AliceBlue"
              x:Class="PrimLolApp.Views.LeagueView">
+  
     <ContentPage.Content>
 
         <StackLayout HeightRequest="150">
             <Picker Title="Select a Region" 
+                        
                         ItemsSource="{Binding ListRegions}"
                         ItemDisplayBinding="{Binding LolRegiones}"
                         SelectedItem="{Binding SelectedRegion}"    
                       />
-            <Picker Title="Select a Region" 
+            <Picker Title="Select a Match" 
+                    
                         ItemsSource="{Binding ListMatchs}"
                         ItemDisplayBinding="{Binding TypeMatchs}"
                         SelectedItem="{Binding SelectedMatchs}"
                         
                       />
-            <Picker Title="Select a Region" 
+            <Picker Title="Select a Elo" 
+                    
                         ItemsSource="{Binding ListTiers}"
                         ItemDisplayBinding="{Binding TierElo}"
                         SelectedItem="{Binding SelectedTiers}"
                        
                       />
-            <Picker Title="Select a Region" 
+            <Picker Title="Select a Division" 
+                    
                         ItemsSource="{Binding ListDivision}"
                         ItemDisplayBinding="{Binding MyDivision}"
                         SelectedItem="{Binding SelectedDvision}"
