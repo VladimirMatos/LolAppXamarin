@@ -19,7 +19,7 @@ namespace PrimLolApp.ViewModels
         private Regiones _selectedRegion;
         public List<Regiones> ListRegion { get; set; }
         public ObservableCollection<SummonerRift> SummonerRift { get; set; }
-        public SummonerRift PlayerRift { get; set; } = new SummonerRift(); 
+        public SummonerRift PlayerRift { get; set; } = new SummonerRift();
 
         IApiService apiServices = new ApiService();
         public DelegateCommand SummonerRiftCommand { get; set; }

@@ -33,7 +33,7 @@ namespace PrimLolApp.Services
             return JsonConvert.DeserializeObject<List<LeaguePointsQueue>>(jsonString);
 
         }
-     
+
         public async Task<List<SummonerRift>> GetSummonerRift(string Region, string ID)
         {
             HttpClient httpClient = new HttpClient();

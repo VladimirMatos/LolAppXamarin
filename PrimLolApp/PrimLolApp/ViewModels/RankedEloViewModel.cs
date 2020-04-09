@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace PrimLolApp.ViewModels
 {
-    public class RankedEloViewModel : BaseViewModel, INotifyPropertyChanged 
+    public class RankedEloViewModel : BaseViewModel, INotifyPropertyChanged
     {
 
         IApiService apiService = new ApiService();

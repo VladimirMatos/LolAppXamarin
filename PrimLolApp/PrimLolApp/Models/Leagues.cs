@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using System.Collections.Generic;
 using System.ComponentModel;
 
 namespace PrimLolApp.Models
@@ -51,5 +50,5 @@ namespace PrimLolApp.Models
     }
 
 
- 
+
 }

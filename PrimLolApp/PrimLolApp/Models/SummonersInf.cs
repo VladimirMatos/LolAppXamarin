@@ -3,7 +3,7 @@ using System.ComponentModel;
 
 namespace PrimLolApp.Models
 {
-    public class SummonersInf: INotifyPropertyChanged
+    public class SummonersInf : INotifyPropertyChanged
     {
 
         [JsonProperty("profileIconId")]

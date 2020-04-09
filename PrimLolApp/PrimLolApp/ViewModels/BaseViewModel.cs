@@ -11,7 +11,7 @@ using Xamarin.Essentials;
 
 namespace PrimLolApp.ViewModels
 {
-    public abstract class BaseViewModel: INotifyPropertyChanged
+    public abstract class BaseViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -25,7 +25,7 @@ namespace PrimLolApp.ViewModels
         {
             this.PageDialogService = pageDialogService;
             this.NavigationService = navigationService;
-            
+
         }
         protected bool SetProperty<T>(ref T backfield, T value,
             [CallerMemberName]string propertyName = null)
@@ -58,6 +58,6 @@ namespace PrimLolApp.ViewModels
         {
             await PageDialogService.DisplayAlertAsync(title, message, accept, cancel);
         }
-       
+
     }
 }

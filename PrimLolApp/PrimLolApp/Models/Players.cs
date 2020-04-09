@@ -16,7 +16,7 @@ namespace PrimLolApp.Models
         public event PropertyChangedEventHandler PropertyChanged;
     }
 
-    public class TierList: INotifyPropertyChanged
+    public class TierList : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
