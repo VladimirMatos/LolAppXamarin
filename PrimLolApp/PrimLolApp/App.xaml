@@ -15,5 +15,23 @@
             <Setter Property="BorderRadius" Value="5" />
             <Setter Property="BorderWidth" Value="2" />
         </Style>
+        <Style TargetType="Image" x:Key="StyleImage">
+            <Setter Property="BackgroundColor" Value="Transparent"/>
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+            <Setter Property="HeightRequest" Value="80"/>
+
+        </Style>
+
+        <Style TargetType="Label" x:Key="StyleLabels">
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="StyleLabelSmall">
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="FontSize" Value="Small"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
     </Application.Resources>
 </prism:PrismApplication>

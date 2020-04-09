@@ -8,10 +8,10 @@
              x:Class="PrimLolApp.Views.SummonerView">
 
     <ContentPage.Content>
-        <StackLayout Margin="40">
-            <Image Source="logo2.png" WidthRequest="96" HeightRequest="96"/>
-            <Frame BackgroundColor="White"  CornerRadius="5" BorderColor="#000000" Margin="0,60" >
-                <StackLayout Margin="25">
+        <StackLayout >
+            <Image Source="logo" WidthRequest="96" HeightRequest="96"/>
+            <Frame BackgroundColor="White"  CornerRadius="5" BorderColor="#000000" Margin="0,10" >
+                <StackLayout  >
                     <Picker Title="Select a Region" 
                         ItemsSource="{Binding ListRegion}"
                         ItemDisplayBinding="{Binding LolRegiones}"
@@ -24,14 +24,24 @@
 
                 </StackLayout>
             </Frame>
-            <Label Text="{Binding SummonersInf.Name}"
+            <Frame BackgroundColor="White"  CornerRadius="5" BorderColor="#000000" Margin="0,20">
+                <StackLayout >
+                    <Label Text="Summoner Name:"/>
+                    <Label Text="{Binding SummonersInf.Name}"
                        />
-            <Label Text="{Binding SummonersInf.SummonerLevel}"
+                    <Label Text="Summoner Level:"/>
+                    <Label Text="{Binding SummonersInf.SummonerLevel}"
                       />
-            <Label Text="{Binding SummonersInf.SummonerId}"
+                    <Label Text="Summoner ID:"/>
+                    <Label Text="{Binding SummonersInf.Id}"
                        />
-            <Label Text="{Binding SummonersInf.RevisionDate}"
+                    <Label Text="Summoner Revision Date:"/>
+                    <Label Text="{Binding SummonersInf.RevisionDate}"
                        />
+                </StackLayout>
+               
+            </Frame>
+           
 
         </StackLayout>
         

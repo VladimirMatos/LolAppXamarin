@@ -33,7 +33,7 @@ namespace PrimLolApp.Models
 
         public SummonerRift()
         {
-            Emblem = "PrimLolApp/Utility/Emblem" + Tier + ".png";
+            Emblem = "PrimLolApp/Utility/Emblem" + "SILVER" + ".png";
         }
 
         public string Emblem { get; set; }

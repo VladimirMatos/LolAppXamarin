@@ -7,10 +7,10 @@
              BackgroundColor="#FF410A66"
              x:Class="PrimLolApp.Views.TierListPlayersView">
     <ContentPage.Content>
-        <StackLayout HeightRequest="1000">
+        <StackLayout >
             <StackLayout Margin="40">
-                <Image Source="logo2.png" WidthRequest="96" HeightRequest="96"/>
-                <Frame BackgroundColor="White"  CornerRadius="5" BorderColor="#000000" Margin="0,60" >
+                <Image Source="logo2.png" WidthRequest="56" HeightRequest="66"/>
+                <Frame BackgroundColor="White"  CornerRadius="5" BorderColor="#000000" Margin="0,10" >
                     <StackLayout Margin="25">
                         <Picker Title="Select a Region" 
                         ItemsSource="{Binding ListContinent}"
@@ -20,7 +20,7 @@
                         Grid.Column="0"
                       />
                         <StackLayout >
-                            <Button   Text="Search"  Style="{StaticResource ButtomStyle}" Command="{Binding TierListCommand}"/>
+                            <Button   Text="Search"  Style="{StaticResource ButtomStyle}" Command="{Binding TierListInf}"/>
                         </StackLayout>
 
                     </StackLayout>
@@ -31,14 +31,18 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout>
-                                <Label  
+                            <Frame BackgroundColor="White"  CornerRadius="5" BorderColor="#000000" Margin="0,60">
+                                <StackLayout>
+                                    <Label Text=" Summoner Name:"/>
+                                    <Label  
                                         Text="{Binding Name}" />
-                                <Label 
+                                    <Label Text=" Summoner Rank:"/>
+                                    <Label 
                                     Text="{Binding Rank}"/>
 
-                            </StackLayout>
-                            
+                                </StackLayout>
+                            </Frame>
+
                         </ViewCell>
 
                     </DataTemplate>

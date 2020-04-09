@@ -9,8 +9,7 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Margin="40">
-                <Image Source="logo2.png" WidthRequest="96" HeightRequest="96"/>
-                <Frame BackgroundColor="White"  CornerRadius="5" BorderColor="#000000" Margin="0,60" >
+                <Frame BackgroundColor="White">
                     <StackLayout Margin="25">
                         <Picker Title="Select a Region" 
                         ItemsSource="{Binding ListRegion}"
@@ -24,7 +23,7 @@
 
                     </StackLayout>
                 </Frame>
-
+              
             </StackLayout>
             <ListView ItemsSource="{Binding SummonerRift}" HasUnevenRows="true">
                 
@@ -34,9 +33,7 @@
                             <StackLayout>
                                 <Frame BackgroundColor="White" >
                                     <StackLayout VerticalOptions="Start" >
-                                        <Frame WidthRequest="100" HeightRequest="100" BorderColor="Gray" HorizontalOptions="Fill" CornerRadius="15">
-                                            <Image Source="{Binding Emblem}" WidthRequest="200" HeightRequest="200"/>
-                                        </Frame>
+                                        
                                         <StackLayout>
                                             <Label FontSize="18" TextColor="Gray" Text="{Binding Tier}" Margin="5" VerticalOptions="Center"/>
                                             <Label FontSize="20" TextColor="Gray" Text="{Binding Rank}" Margin="5"/>

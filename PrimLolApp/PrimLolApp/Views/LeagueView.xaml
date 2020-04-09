@@ -10,9 +10,8 @@
     <ContentPage.Content>
 
         <StackLayout HeightRequest="150">
-            <StackLayout Margin="40">
-                <Image Source="logo2.png" WidthRequest="96" HeightRequest="96"/>
-                <Frame BackgroundColor="White"  CornerRadius="5" BorderColor="#000000" Margin="0,60" >
+            <StackLayout >
+                <Frame BackgroundColor="White"  CornerRadius="5" BorderColor="#000000" Margin="0,10" >
                     <StackLayout Margin="25">
                         <Picker Title="Select a Region" 
                         
@@ -43,7 +42,7 @@
                       />
 
                         <StackLayout >
-                            <Button   Text="Search"  Style="{StaticResource ButtomStyle}" Command="{Binding LeagueSearch}"/>
+                            <Button   Text="Search"  Style="{StaticResource ButtomStyle}" Command="{Binding MatchInfCommand}"/>
                         </StackLayout>
 
                     </StackLayout>
@@ -54,37 +53,47 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout>
-
-                                <Label Text="{Binding LeagueId}"
+                            <Frame>
+                                <StackLayout>
+                                    <Label Text="League ID:"/>
+                                    <Label Text="{Binding LeagueId}"
                                 TextColor="Black"
                                 HorizontalOptions="EndAndExpand"
                       />
-                                <Label Text="{Binding QueueType}"
+                                    <Label Text="Match Type"/>
+                                    <Label Text="{Binding QueueType}"
                         TextColor="Black"
                        />
-                                <Label Text="{Binding Tier}"
+                                    <Label Text="Elo:"/>
+                                    <Label Text="{Binding Tier}"
                         TextColor="Black"
                        />
-                                <Label Text="{Binding Rank}"
+                                    <Label Text="League Division:"/>
+                                    <Label Text="{Binding Rank}"
                         TextColor="Black"
                        />
-                                <Label Text="{Binding SummonerId}"
+                                    <Label Text="Summoner ID"/>
+                                    <Label Text="{Binding SummonerId}"
                         TextColor="Black"
                       />
-                                <Label Text="{Binding SummonerName}"
+                                    <Label Text="Summoner Name"/>
+                                    <Label Text="{Binding SummonerName}"
                         TextColor="Black"
                        />
-                                <Label Text="{Binding LeaguePoints}"
+                                    <Label Text="League Points:" TextColor="Black"/>
+                                    <Label Text="{Binding LeaguePoints}"
                         TextColor="Black"
                        />
-                                <Label Text="{Binding Wins}"
+                                    <Label Text=" Wins" TextColor="Green"/>
+                                    <Label Text="{Binding Wins}"
                         TextColor="Black"
                       />
-                                <Label Text="{Binding Losses}"
+                                    <Label Text=" Losses" TextColor="Red"/>
+                                    <Label Text="{Binding Losses}"
                         TextColor="Black"
                        />
-                            </StackLayout>
+                                </StackLayout>
+                            </Frame>
                         </ViewCell>
             
               </DataTemplate>

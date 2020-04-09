@@ -1,4 +1,5 @@
 ﻿
+using PrimLolApp.Services;
 using PrimLolApp.Utility;
 using Prism.Commands;
 using Prism.Navigation;
@@ -11,8 +12,9 @@ using Xamarin.Essentials;
 
 namespace PrimLolApp.ViewModels
 {
-    public abstract class BaseViewModel : INotifyPropertyChanged
+    public abstract class BaseViewModel : INotifyPropertyChanged 
     {
+       
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
@@ -59,5 +61,6 @@ namespace PrimLolApp.ViewModels
             await PageDialogService.DisplayAlertAsync(title, message, accept, cancel);
         }
 
+       
     }
 }
