@@ -14,7 +14,7 @@ namespace PrimLolApp
         protected override void OnInitialized()
         {
             InitializeComponent();
-            NavigationService.NavigateAsync(new Uri("/HomeTabbedPageview", UriKind.Relative));
+            NavigationService.NavigateAsync(new Uri("/TabbedPageView", UriKind.Relative));
         }
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
