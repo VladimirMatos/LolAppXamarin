@@ -1,32 +1,23 @@
 ﻿
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
-using Xamarin.Essentials;
-using Xamarin.Forms;
-using Prism.Services;
-using Prism.Commands;
-using Prism.Navigation;
-using PrimLolApp.ViewModels;
 using PrimLolApp.Models;
 using PrimLolApp.Services;
-using PrimLolApp.Models.Utility;
+using PrimLolApp.Utility;
+using Prism.Commands;
+using Prism.Navigation;
+using Prism.Services;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace PrimLolApp.ViewModels
 {
     public class SummonerViewModel : BaseViewModel, INotifyPropertyChanged
     {
-        IPageDialogService dialogService;
-        INavigationService navigationService;
+
         public string Regiones { get; set; }
         private Regiones _selectedRegion;
-        public event PropertyChangedEventHandler PropertyChanged;
         public List<Regiones> ListRegion { get; set; }
         public SummonersInf SummonersInf { get; set; } = new SummonersInf();
         IApiService apiServices = new ApiService();
@@ -34,11 +25,9 @@ namespace PrimLolApp.ViewModels
 
 
 
-        public SummonerViewModel(INavigationService inavigationservice, IPageDialogService pageDialogService)
+        public SummonerViewModel(PageDialogService pageDialogService, INavigationService navigationService) : base(pageDialogService, navigationService)
         {
             ListRegion = RegionsPicker.GetRegion().OrderBy(c => c.LolRegiones).ToList();
-            navigationService = inavigationservice;
-            dialogService = pageDialogService;
             SummonerInfoCommand = new DelegateCommand(async () =>
             {
                 await GetSummoners();
@@ -61,28 +50,22 @@ namespace PrimLolApp.ViewModels
 
         async Task GetSummoners()
         {
-            if (Connectivity.NetworkAccess == NetworkAccess.Internet)
+
+            if (await InternetConnection(true))
             {
                 try
                 {
                     var response = await apiServices.GetSummonersInfo(Regiones, SummonersInf.Name);
                     SummonersInf = response;
+
                 }
-                catch (Exception ex)
+                catch (Exception e)
                 {
-                    Debug.WriteLine($"API EXCEPTION {ex}");
+
+                    await ShowMessage(NetMessages.ErrorOccured, e.Message, NetMessages.Ok);
                 }
-
-            }
-            else
-            {
-                Messages();
             }
 
-        }
-        void Messages()
-        {
-            dialogService.DisplayAlertAsync("Error", "Check your connection to internet", "ok");
         }
 
     }

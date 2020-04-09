@@ -2,36 +2,39 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:custom ="clr-namespace:PrimLolApp;assembly=PrimLolApp"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"           
              mc:Ignorable="d"
-            BackgroundColor="AliceBlue"
+            BackgroundColor="#FF410A66"
              x:Class="PrimLolApp.Views.LeagueView">
   
     <ContentPage.Content>
 
         <StackLayout HeightRequest="150">
-            <Picker Title="Select a Region" 
+            <StackLayout Margin="40">
+                <Image Source="logo2.png" WidthRequest="96" HeightRequest="96"/>
+                <Frame BackgroundColor="White"  CornerRadius="5" BorderColor="#000000" Margin="0,60" >
+                    <StackLayout Margin="25">
+                        <Picker Title="Select a Region" 
                         
                         ItemsSource="{Binding ListRegions}"
                         ItemDisplayBinding="{Binding LolRegiones}"
                         SelectedItem="{Binding SelectedRegion}"    
                       />
-            <Picker Title="Select a Match" 
+                        <Picker Title="Select a Match" 
                     
                         ItemsSource="{Binding ListMatchs}"
                         ItemDisplayBinding="{Binding TypeMatchs}"
                         SelectedItem="{Binding SelectedMatchs}"
                         
                       />
-            <Picker Title="Select a Elo" 
+                        <Picker Title="Select a Elo" 
                     
                         ItemsSource="{Binding ListTiers}"
                         ItemDisplayBinding="{Binding TierElo}"
                         SelectedItem="{Binding SelectedTiers}"
                        
                       />
-            <Picker Title="Select a Division" 
+                        <Picker Title="Select a Division" 
                     
                         ItemsSource="{Binding ListDivision}"
                         ItemDisplayBinding="{Binding MyDivision}"
@@ -39,17 +42,23 @@
                         
                       />
 
-            <Button Text="Buscar" Command="{Binding MatchInfCommand}"
-                         TextColor="Black"
-                       />
-            <ListView ItemsSource="{Binding LeaguePoints}">
+                        <StackLayout >
+                            <Button   Text="Search"  Style="{StaticResource ButtomStyle}" Command="{Binding LeagueSearch}"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+            <ListView ItemsSource="{Binding LeaguePoints}" HasUnevenRows="true">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        
+                        <ViewCell>
                             <StackLayout>
 
                                 <Label Text="{Binding LeagueId}"
                                 TextColor="Black"
+                                HorizontalOptions="EndAndExpand"
                       />
                                 <Label Text="{Binding QueueType}"
                         TextColor="Black"
@@ -76,7 +85,8 @@
                         TextColor="Black"
                        />
                             </StackLayout>
-                        
+                        </ViewCell>
+            
               </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

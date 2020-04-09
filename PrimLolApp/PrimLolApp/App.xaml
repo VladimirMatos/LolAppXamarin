@@ -7,6 +7,13 @@
              mc:Ignorable="d"
              x:Class="PrimLolApp.App">
     <Application.Resources>
-
+        <Style x:Key="ButtomStyle" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="Purple"/>
+            <Setter Property="BorderColor" Value="#00dffc"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="Font" Value="Blod,15"/>
+            <Setter Property="BorderRadius" Value="5" />
+            <Setter Property="BorderWidth" Value="2" />
+        </Style>
     </Application.Resources>
 </prism:PrismApplication>

@@ -1,11 +1,10 @@
 ﻿using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
-using System.Text;
+using System.ComponentModel;
 
 namespace PrimLolApp.Models
 {
-    public class Players
+    public class Players : INotifyPropertyChanged
     {
         [JsonProperty("name")]
         public string Name { get; set; }
@@ -13,10 +12,13 @@ namespace PrimLolApp.Models
         [JsonProperty("rank")]
         public int Rank { get; set; }
         public string Region { get; set; }
-    } 
-        
-    public class TierList
+
+        public event PropertyChangedEventHandler PropertyChanged;
+    }
+
+    public class TierList: INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
 
         [JsonProperty("players")]
         public IList<Players> PlayersInfo { get; set; }

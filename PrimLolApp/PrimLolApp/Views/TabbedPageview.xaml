@@ -9,9 +9,11 @@
              x:Class="PrimLolApp.Views.TabbedPageView">
   <!--Pages can be added as references or inline-->
     <TabbedPage.Children>
-        <local:SummonerView Title="Summoner Info"/>
+        <local:SummonerRiftView Title="Summoner Info"/>
         <local:TierListPlayersView Title="Ranking"/>
         <local:LeagueView Title="League Info"/>
+        <local:SummonerView Title="Player INF"/>
+
        <!--<local:SummonerView Title="Summoner Info"/>
         <local:SummonerView Title="Summoner Info"/>-->
     </TabbedPage.Children>

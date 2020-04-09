@@ -1,12 +1,11 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using System.ComponentModel;
 
 namespace PrimLolApp.Models
 {
-    public class SummonersInf
+    public class SummonersInf: INotifyPropertyChanged
     {
+
         [JsonProperty("profileIconId")]
         public int ProfileIconId { get; set; }
 
@@ -27,5 +26,8 @@ namespace PrimLolApp.Models
 
         [JsonProperty("revisionDate")]
         public long RevisionDate { get; set; }
+
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }
+

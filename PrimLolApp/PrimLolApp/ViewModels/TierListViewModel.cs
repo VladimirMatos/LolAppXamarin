@@ -1,6 +1,6 @@
 ﻿using PrimLolApp.Models;
-using PrimLolApp.Models.Utility;
 using PrimLolApp.Services;
+using PrimLolApp.Utility;
 using Prism.Commands;
 using Prism.Navigation;
 using Prism.Services;
@@ -8,31 +8,24 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Essentials;
 
 namespace PrimLolApp.ViewModels
 {
     public class TierListViewModel : BaseViewModel, INotifyPropertyChanged
     {
-        IPageDialogService dialogService;
-        INavigationService navigationService;
+
         ApiService apiService = new ApiService();
         public List<Contins> ListContinent { get; set; }
         public string Continentes { get; set; }
         private Contins _selectedRegion;
         public DelegateCommand TierListInf { get; set; }
-        public event PropertyChangedEventHandler PropertyChanged;
         public Players playersInf { get; set; } = new Players();
         public ObservableCollection<Players> TierList { get; set; }
-        public TierListViewModel(INavigationService inavigationservice, IPageDialogService pageDialogService)
+        public TierListViewModel(PageDialogService pageDialogService, INavigationService navigationService) : base(pageDialogService, navigationService)
         {
             ListContinent = ContinsPicker.GetContinents().OrderBy(c => c.LolCont).ToList();
-            navigationService = inavigationservice;
-            dialogService = pageDialogService;
             TierListInf = new DelegateCommand(async () =>
             {
                 await LoadTierList();
@@ -53,28 +46,21 @@ namespace PrimLolApp.ViewModels
         }
         async Task LoadTierList()
         {
-            if (Connectivity.NetworkAccess == NetworkAccess.Internet)
+            if (await InternetConnection(true))
             {
                 try
                 {
                     var list = await apiService.GetTierList(Continentes);
                     TierList = new ObservableCollection<Players>(list.PlayersInfo);
+
                 }
-                catch (Exception ex)
+                catch (Exception e)
                 {
-                    Debug.WriteLine($"API EXCEPTION {ex}");
+
+                    await ShowMessage(NetMessages.ErrorOccured, e.Message, NetMessages.Ok);
                 }
-
             }
-            else
-            {
-                Messages();
-            }
+        }
 
-        }
-        void Messages()
-        {
-            dialogService.DisplayAlertAsync("Error", "Check your connection to internet", "ok");
-        }
     }
 }

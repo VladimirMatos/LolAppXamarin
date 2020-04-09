@@ -4,24 +4,33 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             BackgroundColor="#FF410A66"
              x:Class="PrimLolApp.Views.TierListPlayersView">
     <ContentPage.Content>
         <StackLayout HeightRequest="1000">
-            <Picker Title="Select a Region" 
+            <StackLayout Margin="40">
+                <Image Source="logo2.png" WidthRequest="96" HeightRequest="96"/>
+                <Frame BackgroundColor="White"  CornerRadius="5" BorderColor="#000000" Margin="0,60" >
+                    <StackLayout Margin="25">
+                        <Picker Title="Select a Region" 
                         ItemsSource="{Binding ListContinent}"
                         ItemDisplayBinding="{Binding LolCont}"
                         SelectedItem="{Binding SelectedContins}"
                         Grid.Row="0"
                         Grid.Column="0"
                       />
+                        <StackLayout >
+                            <Button   Text="Search"  Style="{StaticResource ButtomStyle}" Command="{Binding TierListCommand}"/>
+                        </StackLayout>
 
-            <Button Text="Buscar" Command="{Binding TierListInf}"
-                         TextColor="Black"
-                       />
-            <ListView ItemsSource="{Binding  TierList}">
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+            <ListView ItemsSource="{Binding  TierList}" HasUnevenRows="true">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                      
+                        <ViewCell>
                             <StackLayout>
                                 <Label  
                                         Text="{Binding Name}" />
@@ -29,7 +38,9 @@
                                     Text="{Binding Rank}"/>
 
                             </StackLayout>
-                        
+                            
+                        </ViewCell>
+
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="#FF410A66"
+             x:Class="PrimLolApp.Views.SummonerRiftView">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Margin="40">
+                <Image Source="logo2.png" WidthRequest="96" HeightRequest="96"/>
+                <Frame BackgroundColor="White"  CornerRadius="5" BorderColor="#000000" Margin="0,60" >
+                    <StackLayout Margin="25">
+                        <Picker Title="Select a Region" 
+                        ItemsSource="{Binding ListRegion}"
+                        ItemDisplayBinding="{Binding LolRegiones}"
+                        SelectedItem="{Binding SelectedRegiones}"
+                                />
+                        <Entry Margin="0,50"  Text="{Binding PlayerRift.SummonerId}" Keyboard="Email" Placeholder="Summoner Name" />
+                        <StackLayout >
+                            <Button   Text="Search"  Style="{StaticResource ButtomStyle}" Command="{Binding SummonerRiftCommand}"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+            <ListView ItemsSource="{Binding SummonerRift}" HasUnevenRows="true">
+                
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Frame BackgroundColor="White" >
+                                    <StackLayout VerticalOptions="Start" >
+                                        <Frame WidthRequest="100" HeightRequest="100" BorderColor="Gray" HorizontalOptions="Fill" CornerRadius="15">
+                                            <Image Source="{Binding Emblem}" WidthRequest="200" HeightRequest="200"/>
+                                        </Frame>
+                                        <StackLayout>
+                                            <Label FontSize="18" TextColor="Gray" Text="{Binding Tier}" Margin="5" VerticalOptions="Center"/>
+                                            <Label FontSize="20" TextColor="Gray" Text="{Binding Rank}" Margin="5"/>
+                                        </StackLayout>
+                                        <Label FontSize="30" Text="{Binding SummonerName}" TextColor="DarkGray"/>
+                                        <StackLayout Orientation="Horizontal" >
+                                            <StackLayout Margin="5">
+                                                <Label Text="WINS" FontSize="15" FontAttributes="Bold" TextColor="Green"/>
+                                                <Label Text="{Binding Wins}" FontSize="18" TextColor="Gray" HorizontalTextAlignment="Center"/>
+                                            </StackLayout>
+                                            <StackLayout Margin="5">
+                                                <Label Text="LOSSES" FontSize="15" FontAttributes="Bold" TextColor="DarkRed"/>
+                                                <Label Text="{Binding Losses}" FontSize="18" TextColor="Gray" HorizontalOptions="Center"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <StackLayout >
+                                            <Label Text="LEVEL" FontSize="15" TextColor="LightGray"/>
+                                            <Label Text="{Binding LeaguePoints}" HorizontalOptions="Center" FontSize="80" TextColor="Gray"/>
+                                        </StackLayout>
+                                     
+                                    </StackLayout>
+                                </Frame>
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

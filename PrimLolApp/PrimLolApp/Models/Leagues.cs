@@ -1,11 +1,10 @@
 ﻿using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
-using System.Text;
+using System.ComponentModel;
 
 namespace PrimLolApp.Models
 {
-    public class LeaguePointsQueue
+    public class LeaguePointsQueue : INotifyPropertyChanged
     {
 
         [JsonProperty("leagueId")]
@@ -48,14 +47,9 @@ namespace PrimLolApp.Models
         public bool HotStreak { get; set; }
 
 
-        public string Region { get; set; }
-        public string Match { get; set; }
-        public string elo { get; set; }
-        public string page { get; set; }
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 
-    public class RankedIngo
-    {
-        public IList<LeaguePointsQueue> LeaguePoints { get; set; }
-    }
+
+ 
 }

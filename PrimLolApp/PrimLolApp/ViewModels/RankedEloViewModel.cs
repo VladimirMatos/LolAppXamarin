@@ -1,6 +1,6 @@
 ﻿using PrimLolApp.Models;
-using PrimLolApp.Models.Utility;
 using PrimLolApp.Services;
+using PrimLolApp.Utility;
 using Prism.Commands;
 using Prism.Navigation;
 using Prism.Services;
@@ -8,18 +8,14 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Essentials;
 
 namespace PrimLolApp.ViewModels
 {
-    public class RankedEloViewModel : BaseViewModel,INotifyPropertyChanged
+    public class RankedEloViewModel : BaseViewModel, INotifyPropertyChanged 
     {
-        IPageDialogService dialogService;
-        INavigationService navigationService;
+
         IApiService apiService = new ApiService();
         public List<Division> ListDivision { get; set; }
         public List<Matchs> ListMatchs { get; set; }
@@ -35,18 +31,15 @@ namespace PrimLolApp.ViewModels
         private Division _selectedDivision;
 
         public DelegateCommand MatchInfCommand { get; set; }
-        public event PropertyChangedEventHandler PropertyChanged;
 
         public ObservableCollection<LeaguePointsQueue> LeaguePoints { get; set; }
         public LeaguePointsQueue LeaguePointsQueue { get; set; } = new LeaguePointsQueue();
-        public RankedEloViewModel(INavigationService inavigationservice, IPageDialogService pageDialogService)
+        public RankedEloViewModel(PageDialogService pageDialogService, INavigationService navigationService) : base(pageDialogService, navigationService)
         {
             ListRegions = RegionsPicker.GetRegion().OrderBy(c => c.LolRegiones).ToList();
             ListMatchs = MatchPickers.GetMatchs().OrderBy(c => c.TypeMatchs).ToList();
             ListTiers = TiersPicker.GetTiers().OrderBy(c => c.TierElo).ToList();
             ListDivision = DivisionPicker.GetDivision().OrderBy(c => c.MyDivision).ToList();
-            navigationService = inavigationservice;
-            dialogService = pageDialogService;
             MatchInfCommand = new DelegateCommand(async () =>
             {
                 await LoadRankedInfo();
@@ -105,28 +98,22 @@ namespace PrimLolApp.ViewModels
 
         async Task LoadRankedInfo()
         {
-            if (Connectivity.NetworkAccess == NetworkAccess.Internet)
+            if (await InternetConnection(true))
             {
                 try
                 {
                     var RankedInfo = await apiService.GetMatchRank(Regions, Matchs, Tiers, Divisions);
                     LeaguePoints = new ObservableCollection<LeaguePointsQueue>(RankedInfo);
+
                 }
-                catch (Exception ex)
+                catch (Exception e)
                 {
-                    Debug.WriteLine($"API EXCEPTION {ex}");
+
+                    await ShowMessage(NetMessages.ErrorOccured, e.Message, NetMessages.Ok);
                 }
-
-            }
-            else
-            {
-                Messages();
             }
 
         }
-        void Messages()
-        {
-            dialogService.DisplayAlertAsync("Error", "Check your connection to internet", "ok");
-        }
+
     }
 }
