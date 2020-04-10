@@ -14,7 +14,7 @@ namespace PrimLolApp
         protected override void OnInitialized()
         {
             InitializeComponent();
-            NavigationService.NavigateAsync(new Uri("/TabbedPageView", UriKind.Relative));
+            NavigationService.NavigateAsync(new Uri("/HomePageView", UriKind.Relative));
         }
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
@@ -23,8 +23,7 @@ namespace PrimLolApp
             containerRegistry.RegisterForNavigation<LeagueView, RankedEloViewModel>();
             containerRegistry.RegisterForNavigation<TabbedPageView>();
             containerRegistry.RegisterForNavigation<SummonerRiftView, SummonerRiftViewModel>();
-
-
+            containerRegistry.RegisterForNavigation<HomePageView>();
 
         }
 

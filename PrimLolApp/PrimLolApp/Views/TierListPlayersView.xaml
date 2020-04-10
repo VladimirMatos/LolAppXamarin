@@ -4,16 +4,15 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             BackgroundColor="#FF410A66"
+             BackgroundColor="#00223e"
              x:Class="PrimLolApp.Views.TierListPlayersView">
     <ContentPage.Content>
         <StackLayout >
             <StackLayout Margin="40">
-                <Image Source="logo2.png" WidthRequest="56" HeightRequest="66"/>
                 <Frame BackgroundColor="White"  CornerRadius="5" BorderColor="#000000" Margin="0,10" >
                     <StackLayout Margin="25">
                         <Picker Title="Select a Region" 
-                        ItemsSource="{Binding ListContinent}"
+                         ItemsSource="{Binding ListContinent}"
                         ItemDisplayBinding="{Binding LolCont}"
                         SelectedItem="{Binding SelectedContins}"
                         Grid.Row="0"

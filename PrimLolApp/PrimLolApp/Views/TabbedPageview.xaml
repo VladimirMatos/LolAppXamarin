@@ -5,14 +5,17 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
             xmlns:local="clr-namespace:PrimLolApp.Views"
             mc:Ignorable="d"
-            BackgroundColor="#FF410A66"
+            BackgroundColor="{DynamicResource ThemeBackGroundColor}"
+            BarBackgroundColor="Black"
+            BarTextColor="White"
              x:Class="PrimLolApp.Views.TabbedPageView">
   <!--Pages can be added as references or inline-->
-    <TabbedPage.Children>
-        <local:SummonerRiftView Title="Summoner Info"/>
+    <TabbedPage.Children >
+        
+        <local:SummonerRiftView Title="Player Info"/>
         <local:TierListPlayersView Title="Ranking"/>
         <local:LeagueView Title="League Info"/>
-        <local:SummonerView Title="Player INF"/>
+        <local:SummonerView Title="Summoner Info"/>
 
        <!--<local:SummonerView Title="Summoner Info"/>
         <local:SummonerView Title="Summoner Info"/>-->

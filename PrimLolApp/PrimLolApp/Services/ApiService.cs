@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿
+using Newtonsoft.Json;
 using PrimLolApp.Models;
 using System;
 using System.Collections.Generic;
@@ -42,6 +43,7 @@ namespace PrimLolApp.Services
             var jsonString = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<List<SummonerRift>>(jsonString);
         }
+
 
     }
 }

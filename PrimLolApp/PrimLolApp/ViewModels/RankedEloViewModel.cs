@@ -36,10 +36,10 @@ namespace PrimLolApp.ViewModels
         public LeaguePointsQueue LeaguePointsQueue { get; set; } = new LeaguePointsQueue();
         public RankedEloViewModel(PageDialogService pageDialogService, INavigationService navigationService) : base(pageDialogService, navigationService)
         {
-            ListRegions = RegionsPicker.GetRegion().OrderBy(c => c.LolRegiones).ToList();
-            ListMatchs = MatchPickers.GetMatchs().OrderBy(c => c.TypeMatchs).ToList();
-            ListTiers = TiersPicker.GetTiers().OrderBy(c => c.TierElo).ToList();
-            ListDivision = DivisionPicker.GetDivision().OrderBy(c => c.MyDivision).ToList();
+            ListRegions = GetRegion().OrderBy(c => c.LolRegiones).ToList();
+            ListMatchs = GetMatchs().OrderBy(c => c.TypeMatchs).ToList();
+            ListTiers = GetTiers().OrderBy(c => c.TierElo).ToList();
+            ListDivision = GetDivision().OrderBy(c => c.MyDivision).ToList();
             MatchInfCommand = new DelegateCommand(async () =>
             {
                 await LoadRankedInfo();

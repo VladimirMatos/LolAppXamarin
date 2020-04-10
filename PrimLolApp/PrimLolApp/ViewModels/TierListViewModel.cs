@@ -16,16 +16,16 @@ namespace PrimLolApp.ViewModels
     public class TierListViewModel : BaseViewModel, INotifyPropertyChanged
     {
 
-        ApiService apiService = new ApiService();
+        IApiService apiService = new ApiService();
         public List<Contins> ListContinent { get; set; }
         public string Continentes { get; set; }
         private Contins _selectedRegion;
         public DelegateCommand TierListInf { get; set; }
-        public Players playersInf { get; set; } = new Players();
+     
         public ObservableCollection<Players> TierList { get; set; }
         public TierListViewModel(PageDialogService pageDialogService, INavigationService navigationService) : base(pageDialogService, navigationService)
         {
-            ListContinent = ContinsPicker.GetContinents().OrderBy(c => c.LolCont).ToList();
+            ListContinent = GetContinents().OrderBy(c => c.LolCont).ToList();
             TierListInf = new DelegateCommand(async () =>
             {
                 await LoadTierList();

@@ -27,7 +27,7 @@ namespace PrimLolApp.ViewModels
 
         public SummonerViewModel(PageDialogService pageDialogService, INavigationService navigationService) : base(pageDialogService, navigationService)
         {
-            ListRegion = RegionsPicker.GetRegion().OrderBy(c => c.LolRegiones).ToList();
+            ListRegion = GetRegion().OrderBy(c => c.LolRegiones).ToList();
             SummonerInfoCommand = new DelegateCommand(async () =>
             {
                 await GetSummoners();

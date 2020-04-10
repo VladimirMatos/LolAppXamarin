@@ -60,7 +60,80 @@ namespace PrimLolApp.ViewModels
         {
             await PageDialogService.DisplayAlertAsync(title, message, accept, cancel);
         }
+        public static List<Contins> GetContinents()
+        {
+            var Conti = new List<Contins>()
+            {
+                new Contins(){LolCont ="americas"},
+                new Contins(){LolCont ="asia"},
+                new Contins(){LolCont ="europe"},
 
-       
+            };
+            return Conti;
+        }
+        public static List<Division> GetDivision()
+        {
+            var TypeMatchs = new List<Division>()
+            {
+                new Division(){MyDivision ="I"},
+                new Division(){MyDivision ="II"},
+                new Division(){MyDivision ="III"},
+                new Division(){MyDivision ="IV"}
+
+            };
+            return TypeMatchs;
+        }
+        public static List<Matchs> GetMatchs()
+        {
+            var TypeMatchs = new List<Matchs>()
+            {
+                new Matchs(){TypeMatchs ="RANKED_SOLO_5x5"},
+                new Matchs(){TypeMatchs ="RANKED_TFT"},
+                new Matchs(){TypeMatchs ="RANKED_FLEX_SR"},
+                new Matchs(){TypeMatchs ="RANKED_FLEX_TT"}
+
+            };
+            return TypeMatchs;
+        }
+        public static List<Regiones> GetRegion()
+        {
+            var Regiones = new List<Regiones>()
+            {
+
+                new Regiones(){LolRegiones="br1"},
+                new Regiones(){LolRegiones="eun1"},
+                new Regiones(){LolRegiones="euw1"},
+                new Regiones(){LolRegiones="jp1"},
+                new Regiones(){LolRegiones="kr"},
+                new Regiones(){LolRegiones="la1"},
+                new Regiones(){LolRegiones="la2"},
+                new Regiones(){LolRegiones="na1"},
+                new Regiones(){LolRegiones="oc1"},
+                new Regiones(){LolRegiones="ru"},
+                new Regiones(){LolRegiones="tr1"}
+
+            };
+
+            return Regiones;
+
+        }
+        public static List<Tiers> GetTiers()
+        {
+            var Tiers = new List<Tiers>()
+            {
+                new Tiers(){TierElo ="CHALLENGER"},
+                new Tiers(){TierElo ="GRANDMASTER"},
+                new Tiers(){TierElo ="MASTER"},
+                new Tiers(){TierElo ="DIAMOND"},
+                new Tiers(){TierElo ="PLATINUM"},
+                new Tiers(){TierElo ="GOLD"},
+                new Tiers(){TierElo ="SILVER"},
+                new Tiers(){TierElo ="BRONZE"},
+                new Tiers(){TierElo ="IRON"},
+
+            };
+            return Tiers;
+        }
+
     }
 }

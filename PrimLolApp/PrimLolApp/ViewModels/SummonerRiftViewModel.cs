@@ -10,11 +10,11 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
-using static Android.Resource;
+
 
 namespace PrimLolApp.ViewModels
 {
-    public class SummonerRiftViewModel : BaseViewModel
+    public class SummonerRiftViewModel :BaseViewModel
     {
         public string Regiones { get; set; }
         private Regiones _selectedRegion;
@@ -30,10 +30,11 @@ namespace PrimLolApp.ViewModels
         public SummonerRiftViewModel(PageDialogService pageDialogService, INavigationService navigationService) : base(pageDialogService, navigationService)
         {
             _navigationServices = navigationService;
-            ListRegion = RegionsPicker.GetRegion().OrderBy(c => c.LolRegiones).ToList();
+            ListRegion = GetRegion().OrderBy(c => c.LolRegiones).ToList();
             SummonerRiftCommand = new DelegateCommand(async () =>
             {
                 await GetSummoners();
+               
             });
         }
         public Regiones SelectedRegiones
@@ -57,7 +58,7 @@ namespace PrimLolApp.ViewModels
                 try
                 {
 
-                    var response = await apiServices.GetSummonerRift(Regiones, PlayerRift.SummonerId );
+                    var response = await apiServices.GetSummonerRift(Regiones, PlayerRift.SummonerId);
                     SummonerRift = new ObservableCollection<SummonerRift>(response); ;
 
                 }
@@ -70,6 +71,7 @@ namespace PrimLolApp.ViewModels
 
         }
 
-       
     }
+
 }
+

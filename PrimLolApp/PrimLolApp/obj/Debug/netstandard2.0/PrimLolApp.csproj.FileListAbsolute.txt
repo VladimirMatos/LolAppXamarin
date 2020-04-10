@@ -45,13 +45,14 @@ C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp\obj\Debug\ne
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\Views\SummonerView.xaml.g.cs
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\Views\TabbedPageview.xaml.g.cs
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\Views\TierListPlayersView.xaml.g.cs
-C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\PrimLolApp.csproj.CoreCompileInputs.cache
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\PrimLolApp.AssemblyInfoInputs.cache
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\PrimLolApp.AssemblyInfo.cs
-C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\PrimLolApp.csproj.Fody.CopyLocal.cache
-C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\PrimLolApp.csproj.CopyComplete
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\PrimLolApp.dll
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\ref\PrimLolApp.dll
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\PrimLolApp.pdb
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\PrimLolApp.csprojAssemblyReference.cache
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\Views\HomePageView.xaml.g.cs
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\PrimLolApp.csproj.CoreCompileInputs.cache
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\PrimLolApp.csproj.Fody.CopyLocal.cache
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp\obj\Debug\netstandard2.0\XamlC.stamp

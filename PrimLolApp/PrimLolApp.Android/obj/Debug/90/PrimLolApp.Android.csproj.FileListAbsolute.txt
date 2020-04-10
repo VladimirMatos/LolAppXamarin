@@ -1038,6 +1038,7 @@ C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\res\mipmap-xxhdpi\launcher_foreground.png
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\res\mipmap-xxxhdpi\icon.png
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\res\mipmap-xxxhdpi\launcher_foreground.png
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\res\drawable\emblen.jpg
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\uploadflags.txt
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\resolvedassemblies.hash
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\assets\FormsViewGroup.dll
@@ -1198,6 +1199,8 @@ C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\CarouselPageRenderer.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\CarouselSpacingItemDecoration.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\CarouselViewRenderer.java
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\CarouselViewRenderer_CarouselViewOnScrollListener.java
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\CarouselViewRenderer_CarouselViewwOnGlobalLayoutListener.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\CellAdapter.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\CellRenderer_RendererHolder.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\CenterSnapHelper.java
@@ -1229,6 +1232,7 @@ C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\FormattedStringExtensions_FontSpan.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\FormattedStringExtensions_LineHeightSpan.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\FormattedStringExtensions_TextDecorationSpan.java
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\FormsAnimationDrawable.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\FormsAppCompatActivity.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\FormsApplicationActivity.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\FormsEditText.java
@@ -1236,11 +1240,13 @@ C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\FormsImageView.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\FormsSeekBar.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\FormsTextView.java
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\FormsVideoView.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\FormsWebChromeClient.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\FormsWebViewClient.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\FrameRenderer.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\FrameRenderer_FrameDrawable.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\GenericAnimatorListener.java
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\GenericGlobalLayoutListener.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\GenericMenuClickListener.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\GestureManager_TapAndPanGestureDetector.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\GridLayoutSpanSizeLookup.java
@@ -1251,6 +1257,7 @@ C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\ImageCache_CacheEntry.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\ImageCache_FormsLruCache.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\ImageRenderer.java
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\IndicatorViewRenderer.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\InnerGestureListener.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\InnerScaleListener.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\ItemContentView.java
@@ -1265,9 +1272,11 @@ C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\LocalizedDigitsKeyListener.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\MasterDetailContainer.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\MasterDetailRenderer.java
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\MediaElementRenderer.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\NativeViewWrapperRenderer.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\NavigationRenderer.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\NongreedySnapHelper.java
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\NongreedySnapHelper_InitialScrollListener.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\ObjectJavaBox_1.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\OpenGLViewRenderer.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\OpenGLViewRenderer_Renderer.java
@@ -1285,6 +1294,7 @@ C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\ProgressBarRenderer.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\RefreshViewRenderer.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\ScrollHelper.java
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\ScrollLayoutManager.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\ScrollViewContainer.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\ScrollViewRenderer.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\SearchBarRenderer.java
@@ -1322,6 +1332,7 @@ C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\StepperRendererManager_StepperListener.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\StructuredItemsViewAdapter_2.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\StructuredItemsViewRenderer_3.java
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\SwipeViewRenderer.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\SwitchCellView.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\SwitchRenderer.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\TabbedRenderer.java
@@ -1363,6 +1374,7 @@ C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\ActivityLifecycleContextListener.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\BarometerListener.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\BatteryBroadcastReceiver.java
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\ClipboardChangeListener.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\ConnectivityBroadcastReceiver.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\EnergySaverBroadcastReceiver.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\GyroscopeListener.java
@@ -1372,6 +1384,7 @@ C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\SensorListener.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\SingleLocationListener.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\TextToSpeechImplementation.java
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\WebAuthenticatorCallbackActivity.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc64a98abb514ffad9f1\CustomTabsServiceConnectionImpl.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc64a98abb514ffad9f1\KeepAliveService.java
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\src\crc64bb709004d0eb6ff0\MainActivity.java
@@ -1459,3 +1472,7 @@ C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\res\drawable\wallpaper.png
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\assets\SendGrid.dll
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\android\assets\SendGrid.pdb
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.Android\obj\Debug\90\res\drawable\lol.png

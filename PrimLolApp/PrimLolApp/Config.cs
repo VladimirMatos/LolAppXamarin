@@ -4,7 +4,7 @@
     {
         public static string FindUsers = "v4/summoners/by-name/";
         public static string IniUrl = " https://";
-        public static string ApiKey = "RGAPI-47894742-a752-4324-8e47-ae1af7c4d5de";
+        public static string ApiKey = "RGAPI-bbc47ae2-f178-4af5-9997-0d9ce7d9cf2b";
         public static string UrlSummoner = ".api.riotgames.com/lol/summoner/";
         public static string UrlTierList = ".api.riotgames.com/lor/ranked/v1/leaderboards";
         public static string UrlServerStatus = ".api.riotgames.com/lol/status/v3/shard-data";

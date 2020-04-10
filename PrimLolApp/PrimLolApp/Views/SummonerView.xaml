@@ -4,12 +4,12 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             BackgroundColor="#FF410A66"
+             BackgroundColor="#00223e"
              x:Class="PrimLolApp.Views.SummonerView">
 
     <ContentPage.Content>
         <StackLayout >
-            <Image Source="logo" WidthRequest="96" HeightRequest="96"/>
+            
             <Frame BackgroundColor="White"  CornerRadius="5" BorderColor="#000000" Margin="0,10" >
                 <StackLayout  >
                     <Picker Title="Select a Region" 

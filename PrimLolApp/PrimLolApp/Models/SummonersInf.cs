@@ -6,8 +6,10 @@ namespace PrimLolApp.Models
     public class SummonersInf : INotifyPropertyChanged
     {
 
+        public event PropertyChangedEventHandler PropertyChanged;
+
         [JsonProperty("profileIconId")]
-        public int ProfileIconId { get; set; }
+        public string ProfileIconId { get; set; }
 
         [JsonProperty("name")]
         public string Name { get; set; }
@@ -26,8 +28,9 @@ namespace PrimLolApp.Models
 
         [JsonProperty("revisionDate")]
         public long RevisionDate { get; set; }
+   
+   
 
-        public event PropertyChangedEventHandler PropertyChanged;
     }
 }
 

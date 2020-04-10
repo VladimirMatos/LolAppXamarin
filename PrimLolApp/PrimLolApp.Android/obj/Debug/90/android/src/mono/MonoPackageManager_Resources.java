@@ -10,6 +10,7 @@ public class MonoPackageManager_Resources {
 		"Prism.Forms.dll",
 		"Prism.Unity.Forms.dll",
 		"PropertyChanged.dll",
+		"SendGrid.dll",
 		"Unity.Abstractions.dll",
 		"Unity.Container.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",

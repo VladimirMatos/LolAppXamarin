@@ -48,15 +48,15 @@
             },
             "PropertyChanged.Fody": {
               "target": "Package",
-              "version": "[3.2.6, )"
+              "version": "[3.2.7, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.3.1, )"
+              "version": "[1.5.2, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.3.0.908675, )"
+              "version": "[4.5.0.617, )"
             }
           }
         }
@@ -132,15 +132,19 @@
             },
             "PropertyChanged.Fody": {
               "target": "Package",
-              "version": "[3.2.6, )"
+              "version": "[3.2.7, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.13.2, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.3.1, )"
+              "version": "[1.5.2, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.3.0.908675, )"
+              "version": "[4.5.0.617, )"
             }
           },
           "imports": [

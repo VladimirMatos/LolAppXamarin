@@ -93,8 +93,6 @@ C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\bin\iPho
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.dll
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.pdb
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.dll
-C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.dll
-C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.pdb
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.dll
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\bin\iPhoneSimulator\Debug\ar\Xamarin.Forms.Platform.iOS.resources.dll
@@ -132,7 +130,9 @@ C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\bin\iPho
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\bin\iPhoneSimulator\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\bin\iPhoneSimulator\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\bin\iPhoneSimulator\Debug\PrimLolApp.dll
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.dll
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\bin\iPhoneSimulator\Debug\PrimLolApp.pdb
+C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.pdb
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
@@ -146,6 +146,3 @@ C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\obj\iPho
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\obj\iPhoneSimulator\Debug\PrimLolApp.iOS.csproj.CopyComplete
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\obj\iPhoneSimulator\Debug\PrimLolApp.iOS.exe
 C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\obj\iPhoneSimulator\Debug\PrimLolApp.iOS.pdb
-C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\bin\iPhoneSimulator\Debug\Mono.Android.dll
-C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\bin\iPhoneSimulator\Debug\Mono.Android.pdb
-C:\Users\vladi\Documents\GitHub\LolAppXamarin\PrimLolApp\PrimLolApp.iOS\bin\iPhoneSimulator\Debug\Mono.Android.xml

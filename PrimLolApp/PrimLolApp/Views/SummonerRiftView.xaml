@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             BackgroundColor="#FF410A66"
+             BackgroundColor="#00223e"
              x:Class="PrimLolApp.Views.SummonerRiftView">
     <ContentPage.Content>
         <StackLayout>
@@ -23,46 +23,48 @@
 
                     </StackLayout>
                 </Frame>
-              
-            </StackLayout>
-            <ListView ItemsSource="{Binding SummonerRift}" HasUnevenRows="true">
-                
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout>
-                                <Frame BackgroundColor="White" >
-                                    <StackLayout VerticalOptions="Start" >
-                                        
-                                        <StackLayout>
-                                            <Label FontSize="18" TextColor="Gray" Text="{Binding Tier}" Margin="5" VerticalOptions="Center"/>
-                                            <Label FontSize="20" TextColor="Gray" Text="{Binding Rank}" Margin="5"/>
-                                        </StackLayout>
-                                        <Label FontSize="30" Text="{Binding SummonerName}" TextColor="DarkGray"/>
-                                        <StackLayout Orientation="Horizontal" >
-                                            <StackLayout Margin="5">
-                                                <Label Text="WINS" FontSize="15" FontAttributes="Bold" TextColor="Green"/>
-                                                <Label Text="{Binding Wins}" FontSize="18" TextColor="Gray" HorizontalTextAlignment="Center"/>
-                                            </StackLayout>
-                                            <StackLayout Margin="5">
-                                                <Label Text="LOSSES" FontSize="15" FontAttributes="Bold" TextColor="DarkRed"/>
-                                                <Label Text="{Binding Losses}" FontSize="18" TextColor="Gray" HorizontalOptions="Center"/>
-                                            </StackLayout>
-                                        </StackLayout>
-                                        <StackLayout >
-                                            <Label Text="LEVEL" FontSize="15" TextColor="LightGray"/>
-                                            <Label Text="{Binding LeaguePoints}" HorizontalOptions="Center" FontSize="80" TextColor="Gray"/>
-                                        </StackLayout>
-                                     
-                                    </StackLayout>
-                                </Frame>
 
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-           
-        </StackLayout>
-    </ContentPage.Content>
+
+            </StackLayout>
+            <StackLayout>
+                <ListView ItemsSource="{Binding SummonerRift}" HasUnevenRows="true">
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout>
+                                    <Frame BackgroundColor="White" >
+                                        <StackLayout VerticalOptions="Start" >
+
+                                            <StackLayout>
+                                                <Label FontSize="18" TextColor="Gray" Text="{Binding Tier}" Margin="5" VerticalOptions="Center"/>
+                                                <Label FontSize="20" TextColor="Gray" Text="{Binding Rank}" Margin="5"/>
+                                            </StackLayout>
+                                            <Label FontSize="30" Text="{Binding SummonerName}" TextColor="DarkGray"/>
+                                            <StackLayout Orientation="Horizontal" >
+                                                <StackLayout Margin="5">
+                                                    <Label Text="WINS" FontSize="15" FontAttributes="Bold" TextColor="Green"/>
+                                                    <Label Text="{Binding Wins}" FontSize="18" TextColor="Gray" HorizontalTextAlignment="Center"/>
+                                                </StackLayout>
+                                                <StackLayout Margin="5">
+                                                    <Label Text="LOSSES" FontSize="15" FontAttributes="Bold" TextColor="DarkRed"/>
+                                                    <Label Text="{Binding Losses}" FontSize="18" TextColor="Gray" HorizontalOptions="Center"/>
+                                                </StackLayout>
+                                            </StackLayout>
+                                            <StackLayout >
+                                                <Label Text="LEVEL" FontSize="15" TextColor="LightGray"/>
+                                                <Label Text="{Binding LeaguePoints}" HorizontalOptions="Center" FontSize="80" TextColor="Gray"/>
+                                            </StackLayout>
+
+                                        </StackLayout>
+                                    </Frame>
+
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </StackLayout>
+        </StackLayout>    </ContentPage.Content>
 </ContentPage>
